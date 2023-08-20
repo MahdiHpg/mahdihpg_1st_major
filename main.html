@@ -1,0 +1,2903 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <!-- Responsive Font -->
+    <link href="css/myCss/font-size.css" rel="stylesheet">
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <!-- Bootstrap JQuery -->
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <!-- Bootstrap JQuery -->
+    <script src="https://kit.fontawesome.com/e58af501a2.js"></script>
+    <!--load all Font Awesome styles -->
+    <link href="FontAwsome/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/myCss/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/myCss/animate.css">
+    <link rel="stylesheet" href="css/myCss/owl.theme.default.min.css">
+    <script src="js/myJS/owl.carousel.js"></script>
+    <script src="js/myJS/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/e58af501a2.js"></script>
+
+    <title>قالب دیجیاتو</title>
+  </head>
+  <body>
+    <!-- start Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-md pt-3 pb-3">
+        <div class="container-fluid">
+          <a id="navbarBrand" class="navbar-brand" href="Index.html" style="display: block;">
+              <img id="brand_pic" src="https://digiato.com/wp-content/themes/digiato/assets/img/svg/logo.svg" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbarSupportedContent" class="collapse navbar-collapse d-md-none d-lg-block" dir="ltr">
+            <ul class="navbar-nav mb-2 mb-lg-0 pe-0">
+                <li class="nav-item">
+                  <a class="nav-link active" role="button" aria-current="page" data-bs-toggle="modal" data-bs-target="#LoginModalLabel_Nav">
+                      <i class="fa fa-user text-info"></i>
+                  </a>
+                  <!-- Modal Login -->
+                  <div class="modal fade fs-6" id="LoginModalLabel_Nav" aria-hidden="true" aria-labelledby="LoginModalLabel_Nav" tabindex="-1" dir="rtl">
+                    <div class="modal-dialog modal-dialog-centered modal-xl ">
+                      <div class="modal-content rounded-4 ">
+                        <div class="container">
+                          <div class="row ">
+                            <div id="Login-Form" class="col-xl-6 col-lg-6 col-md-12 col-sm-12 float-start text-start ps-5 pb-4 rounded-4 "
+                                 style="background-color: #ffffff; border-top-left-radius: 0 !important; border-bottom-left-radius: 0 !important;">
+                              <form class=" row g-3 needs-validation mt-3 float-start " novalidate>
+                                <div class=" col-md-10 ">
+                                  <label class="mb-2 fw-bold " for="validationFN">نام کاربری یا پست الکترونیکی</label>
+                                  <input type="text" class="form-control text-start rounded-4 p-3 " id="validationFN" value="" placeholder="نام کاربری یا پست الکترونیکی خود را وارد نمایید" required>
+                                </div>
+                                <div class=" col-md-10 ">
+                                  <label class="mb-2 fw-bold " for="validationPassword">رمز عبور</label>
+                                  <input type="password" class="form-control text-start rounded-4 p-3 " id="validationPassword" value="" placeholder="رمز عبور خود را وارد نمایید" required>
+                                </div>                        
+                                <div class="col-12 float-start ">
+                                  <button class="btn rounded-4 me-4 card-body fs-6 p-3 text-white " type="submit" style="background-color: rgb(255, 72, 0);">ورود به حساب کاربری</button>
+                                </div>
+                                <div class="col-12 float-start mt-4">
+                                  <a class="text-decoration-none d-block fs-14px fw-bold mb-3 " style="width: max-content;" data-bs-target="#SignModal_Nav" data-bs-toggle="modal" role="button">ساخت حساب کاربری جدید</a>
+                                  <a class="text-decoration-none d-block fs-14px fw-bold " style="width: max-content;" data-bs-target="#ForgotModalLabel_Nav" data-bs-toggle="modal" role="button">اطلاعات حساب کاربری خود را فراموش کرده ام</a>
+                                </div>
+                              </form>
+                            </div>
+                            <!-- form-pic -->
+                            <div id="Login-Pic" class="col-xl-6 col-lg-6 col-md-12 col-sm-12 float-end rounded-4 " 
+                                 style="background-color: #f5f8fd; border-top-right-radius: 0 !important; border-bottom-right-radius: 0 !important;">
+                              <div class="p-5 ">
+                                <h5 class=" float-start fw-bold mb-5 text-start ">ورود به حساب کاربری</h5>
+                                <img class="img-fluid" src="Images/login.svg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal Sing-in -->
+                  <div class="modal fade fs-6" id="SignModal_Nav" aria-hidden="true" aria-labelledby="SignModal_Nav" tabindex="-1" dir="rtl">
+                    <div class="modal-dialog modal-dialog-centered modal-xl ">
+                      <div class="modal-content rounded-4 ">
+                        <div class="container">
+                          <div class="row ">
+                            <div id="Sign_In-Form" class="col-xl-6 col-lg-6 col-md-12 col-sm-12 float-start text-start ps-5 pb-4 rounded-4 "
+                                 style="background-color: #ffffff; border-top-left-radius: 0 !important; border-bottom-left-radius: 0 !important;">
+                              <form class=" row g-3 needs-validation mt-3 float-start " novalidate>
+                                <div class=" col-md-10 ">
+                                  <label class="mb-2 fw-bold " for="validationFN">نام کاربری</label>
+                                  <input type="text" class="form-control text-start rounded-4 p-3 " id="validationFN" value="" placeholder="نام کاربری خود را وارد نمایید" required>
+                                </div>
+                                <div class=" col-md-10 ">
+                                  <label class="mb-2 fw-bold " for="validationEmail">پست الکترونیکی</label>
+                                  <input type="email" class="form-control text-start rounded-4 p-3 " id="validationEmail" value="" placeholder="پست الکترونیکی خود را وارد نمایید" required>
+                                </div>
+                                <div class=" col-md-10 ">
+                                  <label class="mb-2 fw-bold " for="validationPassword">رمز عبور</label>
+                                  <input type="password" class="form-control text-start rounded-4 p-3 " id="validationPassword" value="" placeholder="رمز عبور خود را وارد نمایید" required>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label float-start fs-16px fw-bold " for="flexCheckDefault">
+                                    کلیه 
+                                    <a class="text-decoration-none" href="TermsOfUse.html">شرایط و ضوابط</a>
+                                    دیجیاتو را مطالعه کرده‌ام و آن‌ها رو می‌پذیرم.
+                                  </label>
+                                </div>                              
+                                <div class="col-12 float-start ">
+                                  <button class="btn rounded-4 me-4 card-body fs-6 p-3 text-white " type="submit" style="background-color: rgb(255, 72, 0);">ساخت حساب کاربری جدید</button>
+                                </div>
+                                <div class="col-12 float-start mt-4 ">
+                                  <a class="text-decoration-none d-block fs-14px fw-bold mb-3 " style="width: max-content;" data-bs-target="#LoginModalLabel_Nav" data-bs-toggle="modal" role="button">ورود به حساب کاربری</a>
+                                  <a class="text-decoration-none d-block fs-14px fw-bold " style="width: max-content;" data-bs-target="#ForgotModalLabel_Nav" data-bs-toggle="modal" role="button">اطلاعات حساب کاربری خود را فراموش کرده ام</a>
+                                </div>
+                              </form>
+                            </div>
+                            <!-- form-pic -->
+                            <div id="Sign_In-Pic" class="col-xl-6 col-lg-6 col-md-12 col-sm-12 float-end p-5 rounded-4 "
+                                 style="background-color: #f5f8fd; border-top-right-radius: 0 !important; border-bottom-right-radius: 0 !important;">
+                              <div class="p-5 ">
+                                <h5 class=" float-start fw-bold mb-5 text-start ">ساخت حساب کاربری</h5>
+                                <img class="img-fluid" src="Images/register.svg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal Forgot -->
+                  <div class="modal fade fs-6" id="ForgotModalLabel_Nav" aria-hidden="true" aria-labelledby="ForgotModalLabel_Nav" tabindex="-1" dir="rtl">
+                    <div class="modal-dialog modal-dialog-centered modal-xl ">
+                      <div class="modal-content rounded-4 ">
+                        <div class="container">
+                          <div class="row ">
+                            <div id="Forgot-Form" class="col-xl-6 col-lg-6 col-md-12 col-sm-12 float-start text-start ps-5 pb-4 rounded-4 "
+                                 style="background-color: #ffffff; border-top-left-radius: 0 !important; border-bottom-left-radius: 0 !important;">
+                              <form class=" row g-3 needs-validation mt-3 float-start " novalidate>
+                                <div class=" col-md-10 ">
+                                  <label class="mb-2 fw-bold " for="validationFN">پست الکترونیکی</label>
+                                  <input type="email" class="form-control text-start rounded-4 p-3 " id="validationFN" value="" placeholder="پست الکترونیکی خود را وارد نمایید" required>
+                                </div>                
+                                <div class="col-12 float-start ">
+                                  <button class="btn rounded-4 me-4 card-body fs-6 p-3 text-white " type="submit" style="background-color: rgb(255, 72, 0);">بازیابی رمز عبور</button>
+                                </div>
+                                <div class="col-12 float-start mt-4">
+                                  <a class="text-decoration-none d-block fs-14px fw-bold mb-3 " style="width: max-content;" data-bs-target="#SignModal_Nav" data-bs-toggle="modal" role="button">ساخت حساب کاربری جدید</a>
+                                  <a class="text-decoration-none d-block fs-14px fw-bold " style="width: max-content;" data-bs-target="#LoginModalLabel_Nav" data-bs-toggle="modal" role="button">ورود به حساب کاربری</a>
+                                </div>
+                              </form>
+                            </div>
+                            <!-- form-pic -->
+                            <div id="Forgot-Pic" class="col-xl-6 col-lg-6 col-md-12 col-sm-12 float-end rounded-4 " 
+                                 style="background-color: #f5f8fd; border-top-right-radius: 0 !important; border-bottom-right-radius: 0 !important;">
+                              <div class="p-5 ">
+                                <h5 class=" float-start fw-bold mb-5 text-start ">فراموشی رمز عبور</h5>
+                                <img class="img-fluid" src="Images/forgot.svg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item mt-2">
+                    <i onclick="mySearch(this)" class="fa fa-search " style="color: gray; cursor: pointer;"></i>
+                    <script>
+                      function mySearch(x) {
+                      var searchWord = document.getElementById("searchWord");
+                      var searchWordx = document.getElementById("searchWordx");
+                      searchWord.classList.toggle("search-mode");
+                      searchWordx.classList.toggle("search-mode");
+                      }
+                    </script>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled d-none-767" aria-current="page">
+                        <i class="" style="color: gray; border-right: 1px solid gray;"></i>
+                    </a>
+                </li>
+                <li class="nav-item mt-2">
+                    <button id="theme-toggle" class="btn btn-link btn-sm p-0 mb-2 border-0 ml-2 shadow-none " type="button">
+                      <span class="d-block-light d-none  border-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                      </span>
+                      <span class="d-block-dark d-none  border-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                      </span>
+                     </button>
+                      <script>
+                        var toggle = document.getElementById("theme-toggle");
+                        var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+                        if (storedTheme)
+                            document.documentElement.setAttribute('data-theme', storedTheme);
+                        toggle.onclick = function() {
+                            var currentTheme = document.documentElement.getAttribute("data-theme");
+                            var targetTheme = "light";
+                            if (currentTheme === "light") {
+                                targetTheme = "dark";
+                            }
+                            document.documentElement.setAttribute('data-theme', targetTheme)
+                            localStorage.setItem('theme', targetTheme);
+                        };
+                      </script>
+                </li>
+              </ul>
+              <div class="container" id="searchWord">
+                <div class="row justify-content-md-center w-100">
+                    <form id="search_form" class="align-self-center" action="SearchPage.html" role="search" style="width: 600px; ">
+                        <input class="form-control" type="search" placeholder="کلمه کلیدی موردنظر خود را جستجو کنید... " aria-label="Search" style="text-align: right; direction: rtl;">
+                        <button class="btn bottom-0 " type="submit"><i class="fa fa-search text-info"></i></button>
+                    </form>
+                  </div>
+              </div>
+          </div>
+          <div id="xnavbarSupportedContentx" class="collapse navbar-collapse d-none" dir="ltr">
+            <ul class="navbar-nav mb-2 mb-lg-0 pe-0">
+                <li class="nav-item">
+                  <a class="nav-link active" role="button" aria-current="page" data-bs-toggle="modal" data-bs-target="#LoginModalLabel_Navx">
+                      <i class="fa fa-user text-info"></i>
+                  </a>
+                  <!-- Modal Login -->
+                  <div class="modal fade fs-6" id="LoginModalLabel_Navx" aria-hidden="true" aria-labelledby="LoginModalLabel_Navx" tabindex="-1" dir="rtl">
+                    <div class="modal-dialog modal-dialog-centered modal-xl ">
+                      <div class="modal-content rounded-4 ">
+                        <div class="container">
+                          <div class="row ">
+                            <div id="Login-Formx" class="col-xl-6 col-lg-6 col-md-12 col-sm-12 float-start text-start ps-5 pb-4 rounded-4 " 
+                                 style="background-color: #ffffff; border-bottom-left-radius: 0 !important;">
+                              <form class=" row g-3 needs-validation mt-3 float-start " novalidate>
+                                <div class=" col-md-10 ">
+                                  <label class="mb-2 fw-bold " for="validationFN">نام کاربری یا پست الکترونیکی</label>
+                                  <input type="text" class="form-control text-start rounded-4 p-3 " id="validationFN" value="" placeholder="نام کاربری یا پست الکترونیکی خود را وارد نمایید" required>
+                                </div>
+                                <div class=" col-md-10 ">
+                                  <label class="mb-2 fw-bold " for="validationPassword">رمز عبور</label>
+                                  <input type="password" class="form-control text-start rounded-4 p-3 " id="validationPassword" value="" placeholder="رمز عبور خود را وارد نمایید" required>
+                                </div>                        
+                                <div class="col-12 float-start ">
+                                  <button class="btn rounded-4 me-4 card-body fs-6 p-3 text-white " type="submit" style="background-color: rgb(255, 72, 0);">ورود به حساب کاربری</button>
+                                </div>
+                                <div class="col-12 float-start mt-4">
+                                  <a class="text-decoration-none d-block fs-14px fw-bold mb-3 " style="width: max-content;" data-bs-target="#SignModal_Navx" data-bs-toggle="modal" role="button">ساخت حساب کاربری جدید</a>
+                                  <a class="text-decoration-none d-block fs-14px fw-bold " style="width: max-content;" data-bs-target="#ForgotModalLabel_Navx" data-bs-toggle="modal" role="button">اطلاعات حساب کاربری خود را فراموش کرده ام</a>
+                                </div>
+                              </form>
+                            </div>
+                            <!-- form-pic -->
+                            <div id="Login-Picx" class="col-xl-6 col-lg-6 col-md-12 col-sm-12 float-end rounded-4 " 
+                                 style="background-color: #f5f8fd; border-top-right-radius: 0 !important; border-top-left-radius: 0 !important;">
+                              <div class="p-5 ">
+                                <h5 class=" float-start fw-bold mb-5 text-start ">ورود به حساب کاربری</h5>
+                                <img class="img-fluid" src="Images/login.svg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal Sing-in -->
+                  <div class="modal fade fs-6" id="SignModal_Navx" aria-hidden="true" aria-labelledby="SignModal_Navx" tabindex="-1" dir="rtl">
+                    <div class="modal-dialog modal-dialog-centered modal-xl ">
+                      <div class="modal-content rounded-4 ">
+                        <div class="container">
+                          <div class="row ">
+                            <div id="Sign_In-Formx" class="col-xl-6 col-lg-6 col-md-12 col-sm-12 float-start text-start ps-5 pb-4 rounded-4 " 
+                                 style="background-color: #ffffff; border-bottom-left-radius: 0 !important;">
+                              <form class=" row g-3 needs-validation mt-3 float-start " novalidate>
+                                <div class=" col-md-10 ">
+                                  <label class="mb-2 fw-bold " for="validationFN">نام کاربری</label>
+                                  <input type="text" class="form-control text-start rounded-4 p-3 " id="validationFN" value="" placeholder="نام کاربری خود را وارد نمایید" required>
+                                </div>
+                                <div class=" col-md-10 ">
+                                  <label class="mb-2 fw-bold " for="validationEmail">پست الکترونیکی</label>
+                                  <input type="email" class="form-control text-start rounded-4 p-3 " id="validationEmail" value="" placeholder="پست الکترونیکی خود را وارد نمایید" required>
+                                </div>
+                                <div class=" col-md-10 ">
+                                  <label class="mb-2 fw-bold " for="validationPassword">رمز عبور</label>
+                                  <input type="password" class="form-control text-start rounded-4 p-3 " id="validationPassword" value="" placeholder="رمز عبور خود را وارد نمایید" required>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label float-start fs-16px fw-bold " for="flexCheckDefault">
+                                    کلیه 
+                                    <a class="text-decoration-none" href="TermsOfUse.html">شرایط و ضوابط</a>
+                                    دیجیاتو را مطالعه کرده‌ام و آن‌ها رو می‌پذیرم.
+                                  </label>
+                                </div>                              
+                                <div class="col-12 float-start ">
+                                  <button class="btn rounded-4 me-4 card-body fs-6 p-3 text-white " type="submit" style="background-color: rgb(255, 72, 0);">ساخت حساب کاربری جدید</button>
+                                </div>
+                                <div class="col-12 float-start mt-4 ">
+                                  <a class="text-decoration-none d-block fs-14px fw-bold mb-3 " style="width: max-content;" data-bs-target="#LoginModalLabel_Navx" data-bs-toggle="modal" role="button">ورود به حساب کاربری</a>
+                                  <a class="text-decoration-none d-block fs-14px fw-bold " style="width: max-content;" data-bs-target="#ForgotModalLabel_Navx" data-bs-toggle="modal" role="button">اطلاعات حساب کاربری خود را فراموش کرده ام</a>
+                                </div>
+                              </form>
+                            </div>
+                            <!-- form-pic -->
+                            <div id="Sign_In-Picx" class="col-xl-6 col-lg-6 col-md-12 col-sm-12 float-end p-5 rounded-4 " 
+                                 style="background-color: #f5f8fd; border-top-right-radius: 0 !important; border-top-left-radius: 0 !important;">
+                              <div class="p-5 ">
+                                <h5 class=" float-start fw-bold mb-5 text-start ">ساخت حساب کاربری</h5>
+                                <img class="img-fluid" src="Images/register.svg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal Forgot -->
+                  <div class="modal fade fs-6" id="ForgotModalLabel_Navx" aria-hidden="true" aria-labelledby="ForgotModalLabel_Navx" tabindex="-1" dir="rtl">
+                    <div class="modal-dialog modal-dialog-centered modal-xl ">
+                      <div class="modal-content rounded-4 ">
+                        <div class="container">
+                          <div class="row ">
+                            <div id="Forgot-Formx" class="col-xl-6 col-lg-6 col-md-12 col-sm-12 float-start text-start ps-5 pb-4 rounded-4 " 
+                                 style="background-color: #ffffff; border-bottom-left-radius: 0 !important;">
+                              <form class=" row g-3 needs-validation mt-3 float-start " novalidate>
+                                <div class=" col-md-10 ">
+                                  <label class="mb-2 fw-bold " for="validationFN">پست الکترونیکی</label>
+                                  <input type="email" class="form-control text-start rounded-4 p-3 " id="validationFN" value="" placeholder="پست الکترونیکی خود را وارد نمایید" required>
+                                </div>                
+                                <div class="col-12 float-start ">
+                                  <button class="btn rounded-4 me-4 card-body fs-6 p-3 text-white " type="submit" style="background-color: rgb(255, 72, 0);">بازیابی رمز عبور</button>
+                                </div>
+                                <div class="col-12 float-start mt-4">
+                                  <a class="text-decoration-none d-block fs-14px fw-bold mb-3 " style="width: max-content;" data-bs-target="#SignModal_Navx" data-bs-toggle="modal" role="button">ساخت حساب کاربری جدید</a>
+                                  <a class="text-decoration-none d-block fs-14px fw-bold " style="width: max-content;" data-bs-target="#LoginModalLabel_Navx" data-bs-toggle="modal" role="button">ورود به حساب کاربری</a>
+                                </div>
+                              </form>
+                            </div>
+                            <!-- form-pic -->
+                            <div id="Forgot-Picx" class="col-xl-6 col-lg-6 col-md-12 col-sm-12 float-end rounded-4 " 
+                                 style="background-color: #f5f8fd; border-top-right-radius: 0 !important; border-top-left-radius: 0 !important;">
+                              <div class="p-5 ">
+                                <h5 class=" float-start fw-bold mb-5 text-start ">فراموشی رمز عبور</h5>
+                                <img class="img-fluid" src="Images/forgot.svg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item mt-2">
+                    <i onclick="mySearch(this)" class="fa fa-search " style="color: gray; cursor: pointer;"></i>
+                    <script>
+                      function mySearch(x) {
+                      var searchWord = document.getElementById("searchWord");
+                      var searchWordx = document.getElementById("searchWordx");
+                      searchWord.classList.toggle("search-mode");
+                      searchWordx.classList.toggle("search-mode");
+                      }
+                    </script>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled d-none-767" aria-current="page">
+                        <i class="" style="color: gray; border-right: 1px solid gray;"></i>
+                    </a>
+                </li>
+                <li class="nav-item mt-2">
+                  <button id="theme-togglex" class="btn btn-link btn-sm p-0 mb-2 border-0 ml-2 shadow-none " type="button">
+                    <span class="d-block-light d-none  border-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    </span>
+                    <span class="d-block-dark d-none  border-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    </span>
+                   </button>
+                    <script>
+                      var toggle = document.getElementById("theme-togglex");
+                      var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+                      if (storedTheme)
+                          document.documentElement.setAttribute('data-theme', storedTheme);
+                      toggle.onclick = function() {
+                          var currentTheme = document.documentElement.getAttribute("data-theme");
+                          var targetTheme = "light";
+                          if (currentTheme === "light") {
+                              targetTheme = "dark";
+                          }
+                          document.documentElement.setAttribute('data-theme', targetTheme)
+                          localStorage.setItem('theme', targetTheme);
+                      };
+                    </script>
+              </li>
+              </ul>
+              <div class="container" id="searchWordx">
+                <div class="row justify-content-md-center w-100">
+                    <form id="search_form" class="align-self-center" action="SearchPage.html" role="search" style="width: 600px; ">
+                        <input class="form-control" type="search" placeholder="کلمه کلیدی موردنظر خود را جستجو کنید... " aria-label="Search" style="text-align: right; direction: rtl;">
+                        <button class="btn bottom-0 " type="submit"><i class="fa fa-search text-info"></i></button>
+                    </form>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </nav>
+    <!-- end Navbar -->
+    <!-- start Navbar Tabs -->
+    <nav id="Navbar_Tabs" class="nav p-3 d-none d-md-flex float-start w-100">
+      <ul id="ul_navbar_Tabs" class="nav nav-pills col-xl-8 col-lg-8 col-md-12 me-5 float-start" >
+            <li class="nav-item dropdown">
+              <a class="nav-link a_title" href="TechCategory.html" aria-current="page" role="button" aria-expanded="false">تکنولوژی</a>
+              <div class="float-start d-block w-100 pos_ops menus">
+                <ol id="ol_menus" class="float-start menus navBarScollingSite ">
+                  <li class="d-block float-start">
+                    <ul class="dropdown-menu " style="border-bottom: 1px solid red; border-radius: 25px 25px 0 0; ">
+                      <li class="drpMenu_grid col-12 "><a class=" fa fa-fire" href="#"> تازه های امروز</a></li>
+                      <li class="drpMenu_grid col-11 "><a class="dropdown-item " href="#"> تکنولوژی 1</a></li>
+                      <li class="drpMenu_grid col-11 "><a class="dropdown-item " href="#"> تکنولوژی 2</a></li>
+                      <li class="drpMenu_grid col-11 "><a class="dropdown-item " href="#"> تکنولوژی 3</a></li>
+                      <li class="drpMenu_grid col-11 "><a class="dropdown-item " href="#"> تکنولوژی 4</a></li>
+                      <li class="drpMenu_grid col-11 "><a class="dropdown-item " href="#"> تکنولوژی 5</a></li>
+                      <li class="drpMenu_grid col-11 "><a class="dropdown-item " href="#"> تکنولوژی 6</a></li>
+                      <li class="drpMenu_grid col-11 "><a class="dropdown-item " href="#"> تکنولوژی 7</a></li>
+                      <li class="drpMenu_grid col-11 "><a class="dropdown-item " href="#"> تکنولوژی 8</a></li>
+                      <li class="drpMenu_grid col-11 "><a class="dropdown-item " href="#"> تکنولوژی 9</a></li>
+                      <li class="drpMenu_grid col-11 "><a class="dropdown-item " href="#"> تکنولوژی 10</a></li>
+                    </ul>
+                  </li>
+                  <li class="d-block float-start">
+                    <!-- HotNews of This Category -->
+                    <ul class="dropdown-menu " style=" border-radius:0 0 25px 25px; top: 188.8px; ">
+                      <li class=" float-start d-block carousel_li_ops pos_mega_width" >
+                        <p class="float-start" style="border-right: 10px solid orangered; padding-right: 3px; color: #16205b;">داغ‌ترین‌های این دسته‌بندی</p>
+                          <div class=" mb-4 float-start xs_col col-xl-12 col-lg-12 col-md-12 col-sm-12 w-100">
+                            <div id="carouselExampleInterval_mainTech" class="carousel slide border-0 w-100" data-bs-ride="carousel">
+                              <div class="carousel-inner w-100 ">
+                                <div class="carousel-item active w-100 ms-4" data-bs-interval="10000">
+                                <div class="container">
+                                  <div class="row justify-content-start">
+                                    <div class=" d-flex float-start col_carousel_ops">
+                                      <div class="float-start d-flex ">
+                                        <div class=" flex-shrink-0 ">
+                                          <a href="#" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; width: 80px;">
+                                            <img src="Images/80 x 80.svg" class="float-start " height="80" alt="pic" />
+                                          </a>
+                                        </div>
+                                        <div class="flex-grow-1 mt-3 m-0 ps-0 text-wrap " style="width: 290px; ">
+                                          <a href="#" class="m-0 d-flex flex-row">
+                                            <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                          </a>
+                                          <a href="#" class="m-0 d-flex flex-row">
+                                            <span class="text-break">ارسال شده توسط ادمین 1 در 20 روز قبل</span>
+                                          </a>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class=" d-flex float-start col_carousel_ops">
+                                      <div class="float-start d-flex ">
+                                        <div class=" flex-shrink-0 ">
+                                          <a href="#" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; width: 80px;">
+                                            <img src="Images/80 x 80.svg" class="float-start " height="80" alt="pic" />
+                                          </a>
+                                        </div>
+                                        <div class="flex-grow-1 mt-3 m-0 ps-0 text-wrap " style="width: 290px; ">
+                                          <a href="#" class="m-0 d-flex flex-row" >
+                                            <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                          </a>
+                                          <a href="#" class="m-0 d-flex flex-row">
+                                            <span class="text-break">ارسال شده توسط ادمین 2 در 30 روز قبل</span>
+                                          </a>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class=" d-flex float-start col_carousel_ops">
+                                      <div class="float-start d-flex ">
+                                        <div class=" flex-shrink-0 ">
+                                          <a href="#" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; width: 80px;">
+                                            <img src="Images/80 x 80.svg" class="float-start " height="80" alt="pic" />
+                                          </a>
+                                        </div>
+                                        <div class="flex-grow-1 mt-3 m-0 ps-0 text-wrap " style="width: 290px; ">
+                                          <a href="#" class="m-0 d-flex flex-row" >
+                                            <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                          </a>
+                                          <a href="#" class="m-0 d-flex flex-row">
+                                            <span class="text-break">ارسال شده توسط ادمین 3 در 1 روز قبل</span>
+                                          </a>
+                                        </div>
+                                      </div>
+                                  </div>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="carousel-item w-100 ms-4" data-bs-interval="10000">
+                                  <div class="container">
+                                    <div class="row justify-content-start">
+                                      <div class=" d-flex float-start col_carousel_ops">
+                                    <div class="float-start d-flex ">
+                                      <div class=" flex-shrink-0 ">
+                                        <a href="#" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; width: 80px;">
+                                          <img src="Images/80 x 80.svg" class="float-start " height="80" alt="pic" />
+                                        </a>
+                                      </div>
+                                      <div class="flex-grow-1 mt-3 m-0 ps-0 text-wrap " style="width: 290px; ">
+                                        <a href="#" class="m-0 d-flex flex-row" >
+                                          <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                        </a>
+                                        <a href="#" class="m-0 d-flex flex-row">
+                                          <span class="text-break">ارسال شده توسط ادمین 4 در 20 روز قبل</span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                      </div>
+                                      <div class=" d-flex float-start col_carousel_ops">
+                                    <div class="float-start d-flex ">
+                                      <div class=" flex-shrink-0 ">
+                                        <a href="#" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; width: 80px;">
+                                          <img src="Images/80 x 80.svg" class="float-start " height="80" alt="pic" />
+                                        </a>
+                                      </div>
+                                      <div class="flex-grow-1 mt-3 m-0 ps-0 text-wrap " style="width: 290px; ">
+                                        <a href="#" class="m-0 d-flex flex-row" >
+                                          <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                        </a>
+                                        <a href="#" class="m-0 d-flex flex-row">
+                                          <span class="text-break">ارسال شده توسط ادمین 5 در 20 روز قبل</span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                      </div>
+                                      <div class=" d-flex float-start col_carousel_ops">
+                                        <div class="float-start d-flex ">
+                                          <div class=" flex-shrink-0 ">
+                                            <a href="#" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; width: 80px;">
+                                              <img src="Images/80 x 80.svg" class="float-start " height="80" alt="pic" />
+                                            </a>
+                                          </div>
+                                          <div class="flex-grow-1 mt-3 m-0 ps-0 text-wrap " style="width: 290px; ">
+                                            <a href="#" class="m-0 d-flex flex-row" >
+                                              <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                            </a>
+                                            <a href="#" class="m-0 d-flex flex-row">
+                                              <span class="text-break">ارسال شده توسط ادمین 6 در 20 روز قبل</span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <button class="border-0 mt-2 position-absolute start-0 " style="top: 23%; background: none;"
+                                    data-bs-target="#carouselExampleInterval_mainTech" type="button" data-bs-slide="next">
+                                    <i class="fa fa-arrow-right fa-2x text-info" aria-hidden="true"></i>
+                                    <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="border-0 mt-2  position-absolute end-0 " style="top: 23%; background: none;"
+                                    data-bs-target="#carouselExampleInterval_mainTech" type="button" data-bs-slide="prev">
+                                    <i class="fa fa-arrow-left fa-2x text-info" aria-hidden="true"></i>
+                                    <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link a_title" href="#" aria-current="page" role="button" aria-expanded="false">خودرو</a>
+              <!-- Today News -->
+              <div class="float-start d-block w-100 pos_ops menus">
+                <ol class="float-start menus navBarScollingSite ">
+                  <li class="d-block float-start">
+                    <ul class="dropdown-menu " style="border-bottom: 1px solid red; border-radius: 25px 25px 0 0;">
+                      <li class="col-12 drpMenu_grid"><a class=" fa fa-fire" href="#"> تازه های امروز</a></li>
+                      <li class="col-11 drpMenu_grid"><a class="dropdown-item " href="#"> خودرو 1</a></li>
+                      <li class="col-11 drpMenu_grid"><a class="dropdown-item " href="#"> خودرو 2</a></li>
+                      <li class="col-11 drpMenu_grid"><a class="dropdown-item " href="#"> خودرو 3</a></li>
+                      <li class="col-11 drpMenu_grid"><a class="dropdown-item " href="#"> خودرو 4</a></li>
+                      <li class="col-11 drpMenu_grid"><a class="dropdown-item " href="#"> خودرو 5</a></li>
+                      <li class="col-11 drpMenu_grid"><a class="dropdown-item " href="#"> خودرو 6</a></li>
+                      <li class="col-11 drpMenu_grid"><a class="dropdown-item " href="#"> خودرو 7</a></li>
+                      <li class="col-11 drpMenu_grid"><a class="dropdown-item " href="#"> خودرو 8</a></li>
+                      <li class="col-11 drpMenu_grid"><a class="dropdown-item " href="#"> خودرو 9</a></li>
+                      <li class="col-11 drpMenu_grid"><a class="dropdown-item " href="#"> خودرو 10</a></li>
+                    </ul>
+                  </li>
+                  <li class="d-block float-start">
+                    <!-- HotNews of This Category -->
+                    <ul class="dropdown-menu " style="border-radius:0 0 25px 25px; top: 188.8px; ">
+                      <li class=" float-start d-block carousel_li_ops pos_mega_width" >
+                        <p class="float-start" style="border-right: 10px solid orangered; padding-right: 3px; color: #16205b;">داغ‌ترین‌های این دسته‌بندی</p>
+                          <div class=" mb-4 float-start xs_col col-xl-12 col-lg-12 col-md-12 col-sm-12 w-100">
+                            <div id="carouselExampleInterval_mainCar" class="carousel slide border-0 w-100" data-bs-ride="carousel">
+                              <div class="carousel-inner w-100 ">
+                                <div class="carousel-item active w-100 ms-4" data-bs-interval="10000">
+                                <div class="container">
+                                  <div class="row justify-content-start">
+                                    <div class=" d-flex float-start col_carousel_ops">
+                                      <div class="float-start d-flex ">
+                                        <div class=" flex-shrink-0 ">
+                                          <a href="#" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; width: 80px;">
+                                            <img src="Images/80 x 80.svg" class="float-start " height="80" alt="pic" />
+                                          </a>
+                                        </div>
+                                        <div class="flex-grow-1 mt-3 m-0 ps-0 text-wrap " style="width: 290px; ">
+                                          <a href="#" class="m-0 d-flex flex-row">
+                                            <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                          </a>
+                                          <a href="#" class="m-0 d-flex flex-row">
+                                            <span class="text-break">ارسال شده توسط ادمین 1 در 20 روز قبل</span>
+                                          </a>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class=" d-flex float-start col_carousel_ops">
+                                      <div class="float-start d-flex ">
+                                        <div class=" flex-shrink-0 ">
+                                          <a href="#" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; width: 80px;">
+                                            <img src="Images/80 x 80.svg" class="float-start " height="80" alt="pic" />
+                                          </a>
+                                        </div>
+                                        <div class="flex-grow-1 mt-3 m-0 ps-0 text-wrap " style="width: 290px; ">
+                                          <a href="#" class="m-0 d-flex flex-row" >
+                                            <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                          </a>
+                                          <a href="#" class="m-0 d-flex flex-row">
+                                            <span class="text-break">ارسال شده توسط ادمین 2 در 30 روز قبل</span>
+                                          </a>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class=" d-flex float-start col_carousel_ops">
+                                      <div class="float-start d-flex ">
+                                        <div class=" flex-shrink-0 ">
+                                          <a href="#" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; width: 80px;">
+                                            <img src="Images/80 x 80.svg" class="float-start " height="80" alt="pic" />
+                                          </a>
+                                        </div>
+                                        <div class="flex-grow-1 mt-3 m-0 ps-0 text-wrap " style="width: 290px; ">
+                                          <a href="#" class="m-0 d-flex flex-row" >
+                                            <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                          </a>
+                                          <a href="#" class="m-0 d-flex flex-row">
+                                            <span class="text-break">ارسال شده توسط ادمین 3 در 1 روز قبل</span>
+                                          </a>
+                                        </div>
+                                      </div>
+                                  </div>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="carousel-item w-100 ms-4" data-bs-interval="10000">
+                                  <div class="container">
+                                    <div class="row justify-content-start">
+                                      <div class=" d-flex float-start col_carousel_ops">
+                                    <div class="float-start d-flex ">
+                                      <div class=" flex-shrink-0 ">
+                                        <a href="#" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; width: 80px;">
+                                          <img src="Images/80 x 80.svg" class="float-start " height="80" alt="pic" />
+                                        </a>
+                                      </div>
+                                      <div class="flex-grow-1 mt-3 m-0 ps-0 text-wrap " style="width: 290px; ">
+                                        <a href="#" class="m-0 d-flex flex-row" >
+                                          <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                        </a>
+                                        <a href="#" class="m-0 d-flex flex-row">
+                                          <span class="text-break">ارسال شده توسط ادمین 4 در 20 روز قبل</span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                      </div>
+                                      <div class=" d-flex float-start col_carousel_ops">
+                                    <div class="float-start d-flex ">
+                                      <div class=" flex-shrink-0 ">
+                                        <a href="#" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; width: 80px;">
+                                          <img src="Images/80 x 80.svg" class="float-start " height="80" alt="pic" />
+                                        </a>
+                                      </div>
+                                      <div class="flex-grow-1 mt-3 m-0 ps-0 text-wrap " style="width: 290px; ">
+                                        <a href="#" class="m-0 d-flex flex-row" >
+                                          <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                        </a>
+                                        <a href="#" class="m-0 d-flex flex-row">
+                                          <span class="text-break">ارسال شده توسط ادمین 5 در 20 روز قبل</span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                      </div>
+                                      <div class=" d-flex float-start col_carousel_ops">
+                                        <div class="float-start d-flex ">
+                                          <div class=" flex-shrink-0 ">
+                                            <a href="#" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; width: 80px;">
+                                              <img src="Images/80 x 80.svg" class="float-start " height="80" alt="pic" />
+                                            </a>
+                                          </div>
+                                          <div class="flex-grow-1 mt-3 m-0 ps-0 text-wrap " style="width: 290px; ">
+                                            <a href="#" class="m-0 d-flex flex-row" >
+                                              <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                            </a>
+                                            <a href="#" class="m-0 d-flex flex-row">
+                                              <span class="text-break">ارسال شده توسط ادمین 6 در 20 روز قبل</span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <button class="border-0 mt-2 position-absolute start-0 " style="top: 23%; background: none;"
+                                    data-bs-target="#carouselExampleInterval_mainCar" type="button" data-bs-slide="next">
+                                    <i class="fa fa-arrow-right fa-2x text-info" aria-hidden="true"></i>
+                                    <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="border-0 mt-2  position-absolute end-0 " style="top: 23%; background: none;"
+                                    data-bs-target="#carouselExampleInterval_mainCar" type="button" data-bs-slide="prev">
+                                    <i class="fa fa-arrow-left fa-2x text-info" aria-hidden="true"></i>
+                                    <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link a_title" href="#" aria-current="page" role="button" aria-expanded="false">نقد و بررسی</a>
+              <!-- Today News -->
+              <div class="float-start d-block w-100 pos_ops menus">
+                <ol class="float-start menus navBarScollingSite ">
+                  <li class="d-block float-start">
+                    <ul class="dropdown-menu " style="border-bottom: 1px solid red; border-radius: 25px 25px 0 0;">
+                      <li class="col-12 drpMenu_grid"><a class=" fa fa-fire" href="#"> تازه های امروز</a></li>
+                      <li class="col-11 drpMenu_grid"><a class="dropdown-item " href="#"> نقد و بررسی 1</a></li>
+                      <li class="col-11 drpMenu_grid"><a class="dropdown-item " href="#"> نقد و بررسی 2</a></li>
+                      <li class="col-11 drpMenu_grid"><a class="dropdown-item " href="#"> نقد و بررسی 3</a></li>
+                      <li class="col-11 drpMenu_grid"><a class="dropdown-item " href="#"> نقد و بررسی 4</a></li>
+                      <li class="col-11 drpMenu_grid"><a class="dropdown-item " href="#"> نقد و بررسی 5</a></li>
+                      <li class="col-11 drpMenu_grid"><a class="dropdown-item " href="#"> نقد و بررسی 6</a></li>
+                      <li class="col-11 drpMenu_grid"><a class="dropdown-item " href="#"> نقد و بررسی 7</a></li>
+                      <li class="col-11 drpMenu_grid"><a class="dropdown-item " href="#"> نقد و بررسی 8</a></li>
+                      <li class="col-11 drpMenu_grid"><a class="dropdown-item " href="#"> نقد و بررسی 9</a></li>
+                      <li class="col-11 drpMenu_grid"><a class="dropdown-item " href="#"> نقد و بررسی 10</a></li>
+                    </ul>
+                  </li>
+                  <li class="d-block float-start">
+                    <!-- HotNews of This Category -->
+                    <ul class="dropdown-menu " style="border-radius:0 0 25px 25px; top: 188.8px; ">
+                      <li class=" float-start d-block carousel_li_ops pos_mega_width" >
+                        <p class="float-start" style="border-right: 10px solid orangered; padding-right: 3px; color: #16205b;">داغ‌ترین‌های این دسته‌بندی</p>
+                          <div class=" mb-4 float-start xs_col col-xl-12 col-lg-12 col-md-12 col-sm-12 w-100">
+                            <div id="carouselExampleInterval_mainChecks" class="carousel slide border-0 w-100" data-bs-ride="carousel">
+                              <div class="carousel-inner w-100 ">
+                                <div class="carousel-item active w-100 ms-4" data-bs-interval="10000">
+                                <div class="container">
+                                  <div class="row justify-content-start">
+                                    <div class=" d-flex float-start col_carousel_ops">
+                                      <div class="float-start d-flex ">
+                                        <div class=" flex-shrink-0 ">
+                                          <a href="#" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; width: 80px;">
+                                            <img src="Images/80 x 80.svg" class="float-start " height="80" alt="pic" />
+                                          </a>
+                                        </div>
+                                        <div class="flex-grow-1 mt-3 m-0 ps-0 text-wrap " style="width: 290px; ">
+                                          <a href="#" class="m-0 d-flex flex-row">
+                                            <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                          </a>
+                                          <a href="#" class="m-0 d-flex flex-row">
+                                            <span class="text-break">ارسال شده توسط ادمین 1 در 20 روز قبل</span>
+                                          </a>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class=" d-flex float-start col_carousel_ops">
+                                      <div class="float-start d-flex ">
+                                        <div class=" flex-shrink-0 ">
+                                          <a href="#" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; width: 80px;">
+                                            <img src="Images/80 x 80.svg" class="float-start " height="80" alt="pic" />
+                                          </a>
+                                        </div>
+                                        <div class="flex-grow-1 mt-3 m-0 ps-0 text-wrap " style="width: 290px; ">
+                                          <a href="#" class="m-0 d-flex flex-row" >
+                                            <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                          </a>
+                                          <a href="#" class="m-0 d-flex flex-row">
+                                            <span class="text-break">ارسال شده توسط ادمین 2 در 30 روز قبل</span>
+                                          </a>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class=" d-flex float-start col_carousel_ops">
+                                      <div class="float-start d-flex ">
+                                        <div class=" flex-shrink-0 ">
+                                          <a href="#" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; width: 80px;">
+                                            <img src="Images/80 x 80.svg" class="float-start " height="80" alt="pic" />
+                                          </a>
+                                        </div>
+                                        <div class="flex-grow-1 mt-3 m-0 ps-0 text-wrap " style="width: 290px; ">
+                                          <a href="#" class="m-0 d-flex flex-row" >
+                                            <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                          </a>
+                                          <a href="#" class="m-0 d-flex flex-row">
+                                            <span class="text-break">ارسال شده توسط ادمین 3 در 1 روز قبل</span>
+                                          </a>
+                                        </div>
+                                      </div>
+                                  </div>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="carousel-item w-100 ms-4" data-bs-interval="10000">
+                                  <div class="container">
+                                    <div class="row justify-content-start">
+                                      <div class=" d-flex float-start col_carousel_ops">
+                                    <div class="float-start d-flex ">
+                                      <div class=" flex-shrink-0 ">
+                                        <a href="#" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; width: 80px;">
+                                          <img src="Images/80 x 80.svg" class="float-start " height="80" alt="pic" />
+                                        </a>
+                                      </div>
+                                      <div class="flex-grow-1 mt-3 m-0 ps-0 text-wrap " style="width: 290px; ">
+                                        <a href="#" class="m-0 d-flex flex-row" >
+                                          <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                        </a>
+                                        <a href="#" class="m-0 d-flex flex-row">
+                                          <span class="text-break">ارسال شده توسط ادمین 4 در 20 روز قبل</span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                      </div>
+                                      <div class=" d-flex float-start col_carousel_ops">
+                                    <div class="float-start d-flex ">
+                                      <div class=" flex-shrink-0 ">
+                                        <a href="#" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; width: 80px;">
+                                          <img src="Images/80 x 80.svg" class="float-start " height="80" alt="pic" />
+                                        </a>
+                                      </div>
+                                      <div class="flex-grow-1 mt-3 m-0 ps-0 text-wrap " style="width: 290px; ">
+                                        <a href="#" class="m-0 d-flex flex-row" >
+                                          <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                        </a>
+                                        <a href="#" class="m-0 d-flex flex-row">
+                                          <span class="text-break">ارسال شده توسط ادمین 5 در 20 روز قبل</span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                      </div>
+                                      <div class=" d-flex float-start col_carousel_ops">
+                                        <div class="float-start d-flex ">
+                                          <div class=" flex-shrink-0 ">
+                                            <a href="#" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; width: 80px;">
+                                              <img src="Images/80 x 80.svg" class="float-start " height="80" alt="pic" />
+                                            </a>
+                                          </div>
+                                          <div class="flex-grow-1 mt-3 m-0 ps-0 text-wrap " style="width: 290px; ">
+                                            <a href="#" class="m-0 d-flex flex-row" >
+                                              <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                            </a>
+                                            <a href="#" class="m-0 d-flex flex-row">
+                                              <span class="text-break">ارسال شده توسط ادمین 6 در 20 روز قبل</span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <button class="border-0 mt-2 position-absolute start-0 " style="top: 23%; background: none;"
+                                    data-bs-target="#carouselExampleInterval_mainChecks" type="button" data-bs-slide="next">
+                                    <i class="fa fa-arrow-right fa-2x text-info" aria-hidden="true"></i>
+                                    <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="border-0 mt-2  position-absolute end-0 " style="top: 23%; background: none;"
+                                    data-bs-target="#carouselExampleInterval_mainChecks" type="button" data-bs-slide="prev">
+                                    <i class="fa fa-arrow-left fa-2x text-info" aria-hidden="true"></i>
+                                    <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+          </li>
+          <li class="nav-item">
+                <a class="nav-link a_title" href="#">آموزش</a>
+          </li>
+          <li class="nav-item">
+                <a class="nav-link a_title" href="#">راهنمای خرید</a>
+          </li>
+          <li class="nav-item">
+                <a class="nav-link a_title" href="#">علمی</a>
+          </li>
+          <li class="nav-item">
+                <a class="nav-link a_title" href="#">کسب و کار</a>
+          </li>
+          <li class="nav-item">
+                <a class="nav-link a_title" href="#">دیجیاتو</a>
+          </li>
+      </ul>
+      <ul id="most-fans" class="position-absolute end-0 list-unstyled d-none d-lg-flex col-xl-3 col-lg-4 pe-3">
+              <li>پرطرفدار ها:</li>
+              <li><a href="#">سامسونگ</a></li>
+              <li><a href="#">اپل</a></li>
+              <li><a href="#">مایکروسافت</a></li>
+      </ul>
+    </nav>
+    <!-- end Navbar Tabs -->
+    <!-- start section Big_Pics -->
+    <section id="Big_Pics" class="w-100 float-start mb-5">
+        <div class="col-12 w-100 float-start">
+            <div class="container-fluid">
+                <div id="Big_Pics_border" class="row">
+                    <div class="d-none d-md-flex col float-start p-0 m-0 w-100">
+                        <div class="w-100 p-0 m-0">
+                            <div class="card w-100 p-0 m-0">
+                                <a href="Second.html" class="w-100 p-0 m-0"><img src="Images/434 x 272.svg" class="img-fluid rounded-0 w-100 p-0 m-0" alt=""></a>
+                                <div class="card-body position-absolute bottom-0 pb-4 ">
+                                    <h5 class="card-title btn">علمی</h5>
+                                    <a href="Second.html" class="text-decoration-none text-white"><p class="card-text">لورم اپیسوم یک تولید کننده محتوای متن است.</p></a>
+                                </div>                        
+                            </div>
+                            <div class="card w-100 p-0 m-0">
+                                <a href="Second.html" class="w-100 p-0 m-0"><img src="Images/434 x 272.svg" class="img-fluid rounded-0 w-100 p-0 m-0" alt=""></a>
+                                <div class="card-body position-absolute bottom-0 pb-4 ">
+                                    <h5 class="card-title btn">علمی</h5>
+                                    <a href="Second.html" class="text-decoration-none text-white"><p class="card-text">لورم اپیسوم یک تولید کننده محتوای متن است.</p></a>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-md-flex col float-start w-100 p-0 m-0">
+                        <div class="card w-100 p-0 m-0">
+                            <a href="#" class="w-100 p-0 m-0"><img src="Images/434 x 544.svg" class="img-fluid rounded-0 w-100 p-0 m-0" alt=""></a>
+                            <div class="card-body position-absolute bottom-0 pb-4 ">
+                                <h5 class="card-title btn">علمی</h5>
+                                <a href="#" class="text-decoration-none text-white"><p class="card-text">لورم اپیسوم یک تولید کننده محتوای متن است.</p></a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="d-none d-md-flex col float-start w-100 p-0 m-0">
+                        <div class="card w-100 p-0 m-0">
+                            <a href="#" class="w-100 p-0 m-0"><img src="Images/434 x 544.svg" class="img-fluid rounded-0 w-100 p-0 m-0" alt=""></a>
+                            <div class="card-body position-absolute bottom-0 pb-4 ">
+                                <h5 class="card-title btn">علمی</h5>
+                                <a href="#" class="text-decoration-none text-white"><p class="card-text">لورم اپیسوم یک تولید کننده محتوای متن است.</p></a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section Big_Pics -->
+    <!-- start section Editors_suggestion -->
+    <section id="Editors_suggestion" class="float-start mb-5 p-0 mt-2 w-100 ">
+      <h5 class=" float-start fw-bold ps-2 mb-5 h5_style">پیشنهادهای سردبیر</h5>
+      <div id="Editors_suggestion_child" class="float-start xs_col col-xl-12 col-lg-12 col-md-12 col-sm-12 w-100 p-0 ">
+        <div class="float-start col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 xs_col p-0 ">
+            <div class="container-fluid ps-4">
+              <div class="row p-0 ">
+                <div class="float-start mt-2 p-0 m-0 w-100 ">
+                  <div class="owl-carousel owl-theme col ">
+                    <div class="item me-3 col img-hover-zoom img-hover-zoom--xyz">
+                      <div class=" m-0 p-0 ">
+                        <div class="card w-100 p-0 m-0">
+                          <a href="Second.html" class=" p-0 m-0 ">
+                            <img src="Images/352 x 419.svg" class=" img-fluid rounded-0 w-100 p-0 m-0" alt="">
+                          </a>
+                          <div class="card-body position-absolute b-4 ">
+                              <h5 class="card-title btn">علمی</h5>
+                              <a href="#" class="text-decoration-none text-white fw-bold">
+                                <p class="card-text">لورم اپیسوم یک تولید کننده محتوای متن است.</p>
+                              </a>
+                              <a href="#" class="text-decoration-none text-white fw-bold ">
+                                <p class="card-text mt-3 ">نوشته شده توسط ادمین 1 | 1 روز قبل</p>
+                              </a>
+                          </div>
+                          <i id="wishList" onclick="myBookMark(this)" class="fa fa-bookmark "></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item me-3 col img-hover-zoom img-hover-zoom--xyz">
+                      <div class=" m-0 p-0 ">
+                        <div class="card w-100 p-0 m-0">
+                          <a href="#" class=" p-0 m-0 ">
+                            <img src="Images/352 x 419.svg" class=" img-fluid rounded-0 w-100 p-0 m-0" alt="">
+                          </a>
+                          <div class="card-body position-absolute b-4 ">
+                              <h5 class="card-title btn">علمی</h5>
+                              <a href="#" class="text-decoration-none text-white fw-bold">
+                                <p class="card-text">لورم اپیسوم یک تولید کننده محتوای متن است.</p>
+                              </a>
+                              <a href="#" class="text-decoration-none text-white fw-bold ">
+                                <p class="card-text mt-3 ">نوشته شده توسط ادمین 1 | 1 روز قبل</p>
+                              </a>
+                          </div>
+                          <i id="wishList" onclick="myBookMarkEditors_suggestion(this)" class="fa fa-bookmark "></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item me-3 col img-hover-zoom img-hover-zoom--xyz">
+                      <div class=" m-0 p-0 ">
+                        <div class="card w-100 p-0 m-0">
+                          <a href="#" class=" p-0 m-0 ">
+                            <img src="Images/352 x 419.svg" class=" img-fluid rounded-0 w-100 p-0 m-0" alt="">
+                          </a>
+                          <div class="card-body position-absolute b-4 ">
+                              <h5 class="card-title btn">علمی</h5>
+                              <a href="#" class="text-decoration-none text-white fw-bold">
+                                <p class="card-text">لورم اپیسوم یک تولید کننده محتوای متن است.</p>
+                              </a>
+                              <a href="#" class="text-decoration-none text-white fw-bold ">
+                                <p class="card-text mt-3 ">نوشته شده توسط ادمین 1 | 1 روز قبل</p>
+                              </a>
+                          </div>
+                          <i id="wishList" onclick="myBookMarkEditors_suggestion(this)" class="fa fa-bookmark "></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item me-3 col img-hover-zoom img-hover-zoom--xyz">
+                      <div class=" m-0 p-0 ">
+                        <div class="card w-100 p-0 m-0">
+                          <a href="#" class=" p-0 m-0 ">
+                            <img src="Images/352 x 419.svg" class=" img-fluid rounded-0 w-100 p-0 m-0" alt="">
+                          </a>
+                          <div class="card-body position-absolute b-4 ">
+                              <h5 class="card-title btn">علمی</h5>
+                              <a href="#" class="text-decoration-none text-white fw-bold">
+                                <p class="card-text">لورم اپیسوم یک تولید کننده محتوای متن است.</p>
+                              </a>
+                              <a href="#" class="text-decoration-none text-white fw-bold ">
+                                <p class="card-text mt-3 ">نوشته شده توسط ادمین 1 | 1 روز قبل</p>
+                              </a>
+                          </div>
+                          <i id="wishList" onclick="myBookMarkEditors_suggestion(this)" class="fa fa-bookmark "></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item me-3 col img-hover-zoom img-hover-zoom--xyz">
+                      <div class=" m-0 p-0 ">
+                        <div class="card w-100 p-0 m-0">
+                          <a href="#" class=" p-0 m-0 ">
+                            <img src="Images/352 x 419.svg" class=" img-fluid rounded-0 w-100 p-0 m-0" alt="">
+                          </a>
+                          <div class="card-body position-absolute b-4 ">
+                              <h5 class="card-title btn">علمی</h5>
+                              <a href="#" class="text-decoration-none text-white fw-bold">
+                                <p class="card-text">لورم اپیسوم یک تولید کننده محتوای متن است.</p>
+                              </a>
+                              <a href="#" class="text-decoration-none text-white fw-bold ">
+                                <p class="card-text mt-3 ">نوشته شده توسط ادمین 1 | 1 روز قبل</p>
+                              </a>
+                          </div>
+                          <i id="wishList" onclick="myBookMarkEditors_suggestion(this)" class="fa fa-bookmark "></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item me-3 col img-hover-zoom img-hover-zoom--xyz">
+                      <div class=" m-0 p-0 ">
+                        <div class="card w-100 p-0 m-0">
+                          <a href="#" class=" p-0 m-0 ">
+                            <img src="Images/352 x 419.svg" class=" img-fluid rounded-0 w-100 p-0 m-0" alt="">
+                          </a>
+                          <div class="card-body position-absolute b-4 ">
+                              <h5 class="card-title btn">علمی</h5>
+                              <a href="#" class="text-decoration-none text-white fw-bold">
+                                <p class="card-text">لورم اپیسوم یک تولید کننده محتوای متن است.</p>
+                              </a>
+                              <a href="#" class="text-decoration-none text-white fw-bold ">
+                                <p class="card-text mt-3 ">نوشته شده توسط ادمین 1 | 1 روز قبل</p>
+                              </a>
+                          </div>
+                          <i id="wishList" onclick="myBookMarkEditors_suggestion(this)" class="fa fa-bookmark "></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!--Jquery -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+                <!-- Owl Carousel -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+                <!-- custom JS code after importing jquery and owl -->
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $(".owl-carousel").owlCarousel();
+                    });
+                
+                    $('.owl-carousel').owlCarousel({
+                        items:4,
+                        loop:false,
+                        rtl:true,
+                        margin:0,
+                        nav:true,
+                        lazyLoad:true,
+                        dots:false,
+                        autoHeight:false,
+                        autoWidth:true,
+                        autoplay:true,
+                        autoplayTimeout:10000,
+                        autoplayHoverPause:true,
+                        responsive: {
+                            0: {
+                                items: 1
+                            },
+                            600: {
+                                items: 2
+                            },
+                            1000: {
+                                items: 3
+                            },
+                            1200: {
+                                items: 3
+                            },
+                            1400: {
+                                items: 4
+                            }
+                        }
+                    });
+                </script>
+                </div>
+            </div>
+            </div>
+          </div>
+      </div>
+      <div id="ad-ES" class="float-start xs_col col-12 text-center mt-4">
+        <div class="float-start col-12 ms-auto ">
+          <a href="#!" class="ms-auto w-100"><img src="Images/ad-animation3.gif" class="img-fluid" style="transform: rotate(360deg); height: 100px; width: 500px;" alt=""></a>
+        </div>
+      </div>
+    </section>
+    <!-- end section Editors_suggestion -->
+    <!-- start section TodaysNews -->
+    <section id="TodaysNews" class="w-100 float-start mb-5 mt-2 ">
+      <h5 class=" float-start fw-bold ps-2 mb-5 h5_style ">تازه‌های امروز</h5>
+      <div id="btnContainer" class="float-end mt-4 " style="position: relative; left: 2rem; bottom: 3.5rem;">
+        <button id="listView" class="btn " onclick="listView()"><i class="fa fa-bars"></i></button> 
+        <button id="gridView" class="btn " onclick="gridView()"><i class="fa fa-th-large"></i></button>
+      </div>
+      <div class="container-fluid ">
+        <div id="TN_borders_Parent" class="TN_borders_Parent col-lg-9 col-md-12 col-sm-12 xs_col float-start ">
+          <div id="TN_borders" class="TN_borders w-100 col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 xs_col float-start img-hover-zoom img-hover-zoom--xyz ">
+            <div class="col-12 float-start xs_col">
+              <div id="TN_postTimes" class="col-2 float-start TN_postTimes " style="position: relative; top: 3rem;">
+                <p class=" m-0 ps-2 TN_PostTime ">27 دقیقه قبل</p>
+              </div>
+              <div class="parent_TN_imgGrid_358 float-start col-12 ">
+                <div class="col-12 float-start " style="position: relative;top: 0;right: 0;bottom: 0;left: 0;">
+                  <div id="TN_imgGrid_358" class=" float-start TN_imgGrid_358">
+                    <a href="Second.html" class="TN_imgGrid_358_a float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; ">
+                      <img src="Images/706 x 430.svg" class="TN_imgGrid_358_a_img float-start img-fluid" alt="pic" />
+                      <div class="position-relative ">
+                        <i id="wishListTodaysNews" onclick="myBookMarkTodaysNews(this)" class="fa fa-bookmark "></i>
+                      </div>
+                    </a>
+                  </div>
+                  <div id="NewsDesc" class="NewsDesc col-xl-8 col-lg-8 col-md-8 col-sm-12 xs_col float-start " style="display: inline flow-root list-item !important; list-style-type: none;">
+                    <a id="TN_CategoryTitle" href="TechCategory.html" class="TN_CategoryTitle mb-4 d-block " style="text-decoration: none; color: gray; ">تکنولوژی</a>
+                    <a href="Second.html" class="aTitle_firstChild_grid fw-bold fs-xl-15px fs-md-14px text-white d-block" style="text-decoration: none; color: #004b94; ">
+                      <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                    </a>
+                    <a href="Second.html" class="text-wrap lh-lg fs-xl-12px fs-md-13px text-white d-block mb-4 aDesc_firstChild_grid" style="text-decoration: none; color: #6a7196;">
+                      <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                    </a>
+                    <a href="Second.html" class="m-0 fw-bold author_firstChild_grid" style="text-decoration: none; color: #454d7c; ">
+                      <span><img src="Images/32  x 32.svg" class="rounded-circle" width="32" height="32" alt=""></span>
+                      <span class="text-break ps-2">ارسال شده توسط ادمین 6 در 20 روز قبل</span>
+                    </a>
+                  </div>
+                  <div id="TN_imgGrid_330" class="TN_imgGrid_330 TN_imgList_330 col-xl-4 col-lg-4 col-md-4 col-sm-12 xs_col float-end ">
+                    <div class="float-start" style="width: 100%; height: 100%;">
+                      <a href="Second.html" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; ">
+                        <img src="Images/330 x 200.svg" class="float-start img-fluid" alt="pic" />
+                        <div class="position-relative ">
+                          <i id="wishListTodaysNews" onclick="myBookMarkTodaysNews(this)" class="fa fa-bookmark "></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="TN_borders" class="TN_borders w-100 col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 xs_col float-start img-hover-zoom img-hover-zoom--xyz ">
+            <div class="col-12 float-start xs_col">
+              <div id="TN_postTimes" class="col-2 float-start TN_postTimes " style="position: relative; top: 3rem;">
+                <p class=" m-0 ps-2 TN_PostTime ">27 دقیقه قبل</p>
+              </div>
+              <div class="parent_TN_imgGrid_358 float-start col-10 ">
+                <div class="col-12 float-start " style="position: relative;top: 0;right: 0;bottom: 0;left: 0;">
+                  <div id="TN_imgGrid_358" class=" float-start TN_imgGrid_358">
+                    <a href="#!" class="TN_imgGrid_358_a float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; ">
+                      <img src="Images/358 x 215.svg" class="TN_imgGrid_358_a_img float-start img-fluid" alt="pic" />
+                      <div class="position-relative ">
+                        <i id="wishListTodaysNews" onclick="myBookMarkTodaysNews(this)" class="fa fa-bookmark "></i>
+                      </div>
+                    </a>
+                  </div>
+                  <div id="NewsDesc" class="NewsDesc col-xl-8 col-lg-8 col-md-8 col-sm-12 xs_col float-start " style="display: inline flow-root list-item !important; list-style-type: none;">
+                    <a id="TN_CategoryTitle" href="TechCategory.html" class="TN_CategoryTitle mb-4 d-block " style="text-decoration: none; color: gray; ">تکنولوژی</a>
+                    <a href="Second.html" class="aTitle_firstChild_grid fw-bold fs-xl-15px fs-md-14px" style="text-decoration: none; color: #004b94; ">
+                      <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                    </a>
+                    <a href="#" class="text-wrap lh-lg fs-xl-12px fs-md-13px mb-4 aDesc_firstChild_grid" style="text-decoration: none; color: #6a7196;">
+                      <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                    </a>
+                    <a href="#" class="m-0 fw-bold author_firstChild_grid" style="text-decoration: none; color: #454d7c; ">
+                      <span><img src="Images/32  x 32.svg" class="rounded-circle" width="32" height="32" alt=""></span>
+                      <span class="text-break ps-2" style="font-size: 12px;">ارسال شده توسط ادمین 6 در 20 روز قبل</span>
+                    </a>
+                  </div>
+                  <div id="TN_imgGrid_330" class="TN_imgGrid_330 TN_imgList_330 col-xl-4 col-lg-4 col-md-4 col-sm-12 xs_col float-end ">
+                    <div class="float-start" style="width: 100%; height: 100%;">
+                      <a href="#!" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; ">
+                        <img src="Images/330 x 200.svg" class="float-start img-fluid" alt="pic" />
+                        <div class="position-relative ">
+                          <i id="wishListTodaysNews" onclick="myBookMarkTodaysNews(this)" class="fa fa-bookmark "></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="TN_borders" class="TN_borders w-100 col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 xs_col float-start img-hover-zoom img-hover-zoom--xyz ">
+            <div class="col-12 float-start xs_col">
+              <div id="TN_postTimes" class="col-2 float-start TN_postTimes " style="position: relative; top: 3rem;">
+                <p class=" m-0 ps-2 TN_PostTime ">27 دقیقه قبل</p>
+              </div>
+              <div class="parent_TN_imgGrid_358 float-start col-10 ">
+                <div class="col-12 float-start " style="position: relative;top: 0;right: 0;bottom: 0;left: 0;">
+                  <div id="TN_imgGrid_358" class=" float-start TN_imgGrid_358">
+                    <a href="#!" class="TN_imgGrid_358_a float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; ">
+                      <img src="Images/358 x 215.svg" class="TN_imgGrid_358_a_img float-start img-fluid" alt="pic" />
+                      <div class="position-relative ">
+                        <i id="wishListTodaysNews" onclick="myBookMarkTodaysNews(this)" class="fa fa-bookmark "></i>
+                      </div>
+                    </a>
+                  </div>
+                  <div id="NewsDesc" class="NewsDesc col-xl-8 col-lg-8 col-md-8 col-sm-12 xs_col float-start " style="display: inline flow-root list-item !important; list-style-type: none;">
+                    <a id="TN_CategoryTitle" href="TechCategory.html" class="TN_CategoryTitle mb-4 d-block " style="text-decoration: none; color: gray; ">تکنولوژی</a>
+                    <a href="Second.html" class="aTitle_firstChild_grid fw-bold fs-xl-15px fs-md-14px" style="text-decoration: none; color: #004b94; ">
+                      <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                    </a>
+                    <a href="#" class="text-wrap lh-lg fs-xl-12px fs-md-13px mb-4 aDesc_firstChild_grid" style="text-decoration: none; color: #6a7196;">
+                      <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                    </a>
+                    <a href="#" class="m-0 fw-bold author_firstChild_grid" style="text-decoration: none; color: #454d7c; ">
+                      <span><img src="Images/32  x 32.svg" class="rounded-circle" width="32" height="32" alt=""></span>
+                      <span class="text-break ps-2" style="font-size: 12px;">ارسال شده توسط ادمین 6 در 20 روز قبل</span>
+                    </a>
+                  </div>
+                  <div id="TN_imgGrid_330" class="TN_imgGrid_330 TN_imgList_330 col-xl-4 col-lg-4 col-md-4 col-sm-12 xs_col float-end ">
+                    <div class="float-start" style="width: 100%; height: 100%;">
+                      <a href="#!" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; ">
+                        <img src="Images/330 x 200.svg" class="float-start img-fluid" alt="pic" />
+                        <div class="position-relative ">
+                          <i id="wishListTodaysNews" onclick="myBookMarkTodaysNews(this)" class="fa fa-bookmark "></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="TN_borders" class="TN_borders w-100 col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 xs_col float-start img-hover-zoom img-hover-zoom--xyz ">
+            <div class="col-12 float-start xs_col">
+              <div id="TN_postTimes" class="col-2 float-start TN_postTimes " style="position: relative; top: 3rem;">
+                <p class=" m-0 ps-2 TN_PostTime ">27 دقیقه قبل</p>
+              </div>
+              <div class="parent_TN_imgGrid_358 float-start col-10 ">
+                <div class="col-12 float-start " style="position: relative;top: 0;right: 0;bottom: 0;left: 0;">
+                  <div id="TN_imgGrid_358" class=" float-start TN_imgGrid_358">
+                    <a href="#!" class="TN_imgGrid_358_a float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; ">
+                      <img src="Images/358 x 215.svg" class="TN_imgGrid_358_a_img float-start img-fluid" alt="pic" />
+                      <div class="position-relative ">
+                        <i id="wishListTodaysNews" onclick="myBookMarkTodaysNews(this)" class="fa fa-bookmark "></i>
+                      </div>
+                    </a>
+                  </div>
+                  <div id="NewsDesc" class="NewsDesc col-xl-8 col-lg-8 col-md-8 col-sm-12 xs_col float-start " style="display: inline flow-root list-item !important; list-style-type: none;">
+                    <a id="TN_CategoryTitle" href="TechCategory.html" class="TN_CategoryTitle mb-4 d-block " style="text-decoration: none; color: gray; ">تکنولوژی</a>
+                    <a href="Second.html" class="aTitle_firstChild_grid fw-bold fs-xl-15px fs-md-14px" style="text-decoration: none; color: #004b94; ">
+                      <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                    </a>
+                    <a href="#" class="text-wrap lh-lg fs-xl-12px fs-md-13px mb-4 aDesc_firstChild_grid" style="text-decoration: none; color: #6a7196;">
+                      <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                    </a>
+                    <a href="#" class="m-0 fw-bold author_firstChild_grid" style="text-decoration: none; color: #454d7c; ">
+                      <span><img src="Images/32  x 32.svg" class="rounded-circle" width="32" height="32" alt=""></span>
+                      <span class="text-break ps-2" style="font-size: 12px;">ارسال شده توسط ادمین 6 در 20 روز قبل</span>
+                    </a>
+                  </div>
+                  <div id="TN_imgGrid_330" class="TN_imgGrid_330 TN_imgList_330 col-xl-4 col-lg-4 col-md-4 col-sm-12 xs_col float-end ">
+                    <div class="float-start" style="width: 100%; height: 100%;">
+                      <a href="#!" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; ">
+                        <img src="Images/330 x 200.svg" class="float-start img-fluid" alt="pic" />
+                        <div class="position-relative ">
+                          <i id="wishListTodaysNews" onclick="myBookMarkTodaysNews(this)" class="fa fa-bookmark "></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="TN_borders" class="TN_borders w-100 col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 xs_col float-start img-hover-zoom img-hover-zoom--xyz ">
+            <div class="col-12 float-start xs_col">
+              <div id="TN_postTimes" class="col-2 float-start TN_postTimes " style="position: relative; top: 3rem;">
+                <p class=" m-0 ps-2 TN_PostTime ">27 دقیقه قبل</p>
+              </div>
+              <div class="parent_TN_imgGrid_358 float-start col-10 ">
+                <div class="col-12 float-start " style="position: relative;top: 0;right: 0;bottom: 0;left: 0;">
+                  <div id="TN_imgGrid_358" class=" float-start TN_imgGrid_358">
+                    <a href="#!" class="TN_imgGrid_358_a float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; ">
+                      <img src="Images/358 x 215.svg" class="TN_imgGrid_358_a_img float-start img-fluid" alt="pic" />
+                      <div class="position-relative ">
+                        <i id="wishListTodaysNews" onclick="myBookMarkTodaysNews(this)" class="fa fa-bookmark "></i>
+                      </div>
+                    </a>
+                  </div>
+                  <div id="NewsDesc" class="NewsDesc col-xl-8 col-lg-8 col-md-8 col-sm-12 xs_col float-start " style="display: inline flow-root list-item !important; list-style-type: none;">
+                    <a id="TN_CategoryTitle" href="TechCategory.html" class="TN_CategoryTitle mb-4 d-block " style="text-decoration: none; color: gray; ">تکنولوژی</a>
+                    <a href="Second.html" class="aTitle_firstChild_grid fw-bold fs-xl-15px fs-md-14px" style="text-decoration: none; color: #004b94; ">
+                      <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                    </a>
+                    <a href="#" class="text-wrap lh-lg fs-xl-12px fs-md-13px mb-4 aDesc_firstChild_grid" style="text-decoration: none; color: #6a7196;">
+                      <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                    </a>
+                    <a href="#" class="m-0 fw-bold author_firstChild_grid" style="text-decoration: none; color: #454d7c; ">
+                      <span><img src="Images/32  x 32.svg" class="rounded-circle" width="32" height="32" alt=""></span>
+                      <span class="text-break ps-2" style="font-size: 12px;">ارسال شده توسط ادمین 6 در 20 روز قبل</span>
+                    </a>
+                  </div>
+                  <div id="TN_imgGrid_330" class="TN_imgGrid_330 TN_imgList_330 col-xl-4 col-lg-4 col-md-4 col-sm-12 xs_col float-end ">
+                    <div class="float-start" style="width: 100%; height: 100%;">
+                      <a href="#!" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; ">
+                        <img src="Images/330 x 200.svg" class="float-start img-fluid" alt="pic" />
+                        <div class="position-relative ">
+                          <i id="wishListTodaysNews" onclick="myBookMarkTodaysNews(this)" class="fa fa-bookmark "></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="TN_borders" class="TN_borders w-100 col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 xs_col float-start img-hover-zoom img-hover-zoom--xyz ">
+            <div class="col-12 float-start xs_col">
+              <div id="TN_postTimes" class="col-2 float-start TN_postTimes " style="position: relative; top: 3rem;">
+                <p class=" m-0 ps-2 TN_PostTime ">27 دقیقه قبل</p>
+              </div>
+              <div class="parent_TN_imgGrid_358 float-start col-10 ">
+                <div class="col-12 float-start " style="position: relative;top: 0;right: 0;bottom: 0;left: 0;">
+                  <div id="TN_imgGrid_358" class=" float-start TN_imgGrid_358">
+                    <a href="#!" class="TN_imgGrid_358_a float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; ">
+                      <img src="Images/358 x 215.svg" class="TN_imgGrid_358_a_img float-start img-fluid" alt="pic" />
+                      <div class="position-relative ">
+                        <i id="wishListTodaysNews" onclick="myBookMarkTodaysNews(this)" class="fa fa-bookmark "></i>
+                      </div>
+                    </a>
+                  </div>
+                  <div id="NewsDesc" class="NewsDesc col-xl-8 col-lg-8 col-md-8 col-sm-12 xs_col float-start " style="display: inline flow-root list-item !important; list-style-type: none;">
+                    <a id="TN_CategoryTitle" href="TechCategory.html" class="TN_CategoryTitle mb-4 d-block " style="text-decoration: none; color: gray; ">تکنولوژی</a>
+                    <a href="Second.html" class="aTitle_firstChild_grid fw-bold fs-xl-15px fs-md-14px" style="text-decoration: none; color: #004b94; ">
+                      <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                    </a>
+                    <a href="#" class="text-wrap lh-lg fs-xl-12px fs-md-13px mb-4 aDesc_firstChild_grid" style="text-decoration: none; color: #6a7196;">
+                      <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                    </a>
+                    <a href="#" class="m-0 fw-bold author_firstChild_grid" style="text-decoration: none; color: #454d7c; ">
+                      <span><img src="Images/32  x 32.svg" class="rounded-circle" width="32" height="32" alt=""></span>
+                      <span class="text-break ps-2" style="font-size: 12px;">ارسال شده توسط ادمین 6 در 20 روز قبل</span>
+                    </a>
+                  </div>
+                  <div id="TN_imgGrid_330" class="TN_imgGrid_330 TN_imgList_330 col-xl-4 col-lg-4 col-md-4 col-sm-12 xs_col float-end ">
+                    <div class="float-start" style="width: 100%; height: 100%;">
+                      <a href="#!" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; ">
+                        <img src="Images/330 x 200.svg" class="float-start img-fluid" alt="pic" />
+                        <div class="position-relative ">
+                          <i id="wishListTodaysNews" onclick="myBookMarkTodaysNews(this)" class="fa fa-bookmark "></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="TN_borders" class="TN_borders w-100 col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 xs_col float-start img-hover-zoom img-hover-zoom--xyz ">
+            <div class="col-12 float-start xs_col">
+              <div id="TN_postTimes" class="col-2 float-start TN_postTimes " style="position: relative; top: 3rem;">
+                <p class=" m-0 ps-2 TN_PostTime ">27 دقیقه قبل</p>
+              </div>
+              <div class="parent_TN_imgGrid_358 float-start col-10 ">
+                <div class="col-12 float-start " style="position: relative;top: 0;right: 0;bottom: 0;left: 0;">
+                  <div id="TN_imgGrid_358" class=" float-start TN_imgGrid_358">
+                    <a href="#!" class="TN_imgGrid_358_a float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; ">
+                      <img src="Images/358 x 215.svg" class="TN_imgGrid_358_a_img float-start img-fluid" alt="pic" />
+                      <div class="position-relative ">
+                        <i id="wishListTodaysNews" onclick="myBookMarkTodaysNews(this)" class="fa fa-bookmark "></i>
+                      </div>
+                    </a>
+                  </div>
+                  <div id="NewsDesc" class="NewsDesc col-xl-8 col-lg-8 col-md-8 col-sm-12 xs_col float-start " style="display: inline flow-root list-item !important; list-style-type: none;">
+                    <a id="TN_CategoryTitle" href="TechCategory.html" class="TN_CategoryTitle mb-4 d-block " style="text-decoration: none; color: gray; ">تکنولوژی</a>
+                    <a href="Second.html" class="aTitle_firstChild_grid fw-bold fs-xl-15px fs-md-14px" style="text-decoration: none; color: #004b94; ">
+                      <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                    </a>
+                    <a href="#" class="text-wrap lh-lg fs-xl-12px fs-md-13px mb-4 aDesc_firstChild_grid" style="text-decoration: none; color: #6a7196;">
+                      <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                    </a>
+                    <a href="#" class="m-0 fw-bold author_firstChild_grid" style="text-decoration: none; color: #454d7c; ">
+                      <span><img src="Images/32  x 32.svg" class="rounded-circle" width="32" height="32" alt=""></span>
+                      <span class="text-break ps-2" style="font-size: 12px;">ارسال شده توسط ادمین 6 در 20 روز قبل</span>
+                    </a>
+                  </div>
+                  <div id="TN_imgGrid_330" class="TN_imgGrid_330 TN_imgList_330 col-xl-4 col-lg-4 col-md-4 col-sm-12 xs_col float-end ">
+                    <div class="float-start" style="width: 100%; height: 100%;">
+                      <a href="#!" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; ">
+                        <img src="Images/330 x 200.svg" class="float-start img-fluid" alt="pic" />
+                        <div class="position-relative ">
+                          <i id="wishListTodaysNews" onclick="myBookMarkTodaysNews(this)" class="fa fa-bookmark "></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="TN_borders" class="TN_borders w-100 col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 xs_col float-start img-hover-zoom img-hover-zoom--xyz ">
+            <div class="col-12 float-start xs_col">
+              <div id="TN_postTimes" class="col-2 float-start TN_postTimes " style="position: relative; top: 3rem;">
+                <p class=" m-0 ps-2 TN_PostTime ">27 دقیقه قبل</p>
+              </div>
+              <div class="parent_TN_imgGrid_358 float-start col-10 ">
+                <div class="col-12 float-start " style="position: relative;top: 0;right: 0;bottom: 0;left: 0;">
+                  <div id="TN_imgGrid_358" class=" float-start TN_imgGrid_358">
+                    <a href="#!" class="TN_imgGrid_358_a float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; ">
+                      <img src="Images/358 x 215.svg" class="TN_imgGrid_358_a_img float-start img-fluid" alt="pic" />
+                      <div class="position-relative ">
+                        <i id="wishListTodaysNews" onclick="myBookMarkTodaysNews(this)" class="fa fa-bookmark "></i>
+                      </div>
+                    </a>
+                  </div>
+                  <div id="NewsDesc" class="NewsDesc col-xl-8 col-lg-8 col-md-8 col-sm-12 xs_col float-start " style="display: inline flow-root list-item !important; list-style-type: none;">
+                    <a id="TN_CategoryTitle" href="TechCategory.html" class="TN_CategoryTitle mb-4 d-block " style="text-decoration: none; color: gray; ">تکنولوژی</a>
+                    <a href="Second.html" class="aTitle_firstChild_grid fw-bold fs-xl-15px fs-md-14px" style="text-decoration: none; color: #004b94; ">
+                      <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                    </a>
+                    <a href="#" class="text-wrap lh-lg fs-xl-12px fs-md-13px mb-4 aDesc_firstChild_grid" style="text-decoration: none; color: #6a7196;">
+                      <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                    </a>
+                    <a href="#" class="m-0 fw-bold author_firstChild_grid" style="text-decoration: none; color: #454d7c; ">
+                      <span><img src="Images/32  x 32.svg" class="rounded-circle" width="32" height="32" alt=""></span>
+                      <span class="text-break ps-2" style="font-size: 12px;">ارسال شده توسط ادمین 6 در 20 روز قبل</span>
+                    </a>
+                  </div>
+                  <div id="TN_imgGrid_330" class="TN_imgGrid_330 TN_imgList_330 col-xl-4 col-lg-4 col-md-4 col-sm-12 xs_col float-end ">
+                    <div class="float-start" style="width: 100%; height: 100%;">
+                      <a href="#!" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; ">
+                        <img src="Images/330 x 200.svg" class="float-start img-fluid" alt="pic" />
+                        <div class="position-relative ">
+                          <i id="wishListTodaysNews" onclick="myBookMarkTodaysNews(this)" class="fa fa-bookmark "></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="TN_borders" class="TN_borders w-100 col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 xs_col float-start img-hover-zoom img-hover-zoom--xyz ">
+            <div class="col-12 float-start xs_col">
+              <div id="TN_postTimes" class="col-2 float-start TN_postTimes " style="position: relative; top: 3rem;">
+                <p class=" m-0 ps-2 TN_PostTime ">27 دقیقه قبل</p>
+              </div>
+              <div class="parent_TN_imgGrid_358 float-start col-10 ">
+                <div class="col-12 float-start " style="position: relative;top: 0;right: 0;bottom: 0;left: 0;">
+                  <div id="TN_imgGrid_358" class=" float-start TN_imgGrid_358">
+                    <a href="#!" class="TN_imgGrid_358_a float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; ">
+                      <img src="Images/358 x 215.svg" class="TN_imgGrid_358_a_img float-start img-fluid" alt="pic" />
+                      <div class="position-relative ">
+                        <i id="wishListTodaysNews" onclick="myBookMarkTodaysNews(this)" class="fa fa-bookmark "></i>
+                      </div>
+                    </a>
+                  </div>
+                  <div id="NewsDesc" class="NewsDesc col-xl-8 col-lg-8 col-md-8 col-sm-12 xs_col float-start " style="display: inline flow-root list-item !important; list-style-type: none;">
+                    <a id="TN_CategoryTitle" href="TechCategory.html" class="TN_CategoryTitle mb-4 d-block " style="text-decoration: none; color: gray; ">تکنولوژی</a>
+                    <a href="Second.html" class="aTitle_firstChild_grid fw-bold fs-xl-15px fs-md-14px" style="text-decoration: none; color: #004b94; ">
+                      <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                    </a>
+                    <a href="#" class="text-wrap lh-lg fs-xl-12px fs-md-13px mb-4 aDesc_firstChild_grid" style="text-decoration: none; color: #6a7196;">
+                      <p class="text-break ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                    </a>
+                    <a href="#" class="m-0 fw-bold author_firstChild_grid" style="text-decoration: none; color: #454d7c; ">
+                      <span><img src="Images/32  x 32.svg" class="rounded-circle" width="32" height="32" alt=""></span>
+                      <span class="text-break ps-2" style="font-size: 12px;">ارسال شده توسط ادمین 6 در 20 روز قبل</span>
+                    </a>
+                  </div>
+                  <div id="TN_imgGrid_330" class="TN_imgGrid_330 TN_imgList_330 col-xl-4 col-lg-4 col-md-4 col-sm-12 xs_col float-end ">
+                    <div class="float-start" style="width: 100%; height: 100%;">
+                      <a href="#!" class=" float-start img-hover-zoom img-hover-zoom--xyz " style="display: flex; ">
+                        <img src="Images/330 x 200.svg" class="float-start img-fluid" alt="pic" />
+                        <div class="position-relative ">
+                          <i id="wishListTodaysNews" onclick="myBookMarkTodaysNews(this)" class="fa fa-bookmark "></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- مشاهده مطالب بیشتر -->
+          <div class="col-12 text-center float-start">
+            <button class="btn btn-outline-danger p-3 mt-5 mb-3 " style="border-radius: 15%;">
+              <i class="fa fa-newspaper"> مشاهده مطالب بیشتر</i>
+            </button>
+          </div>
+        </div>
+        <div id="Ad_TNpart" class="col-lg-3 float-end mt-4 d-none d-lg-block ">
+          <div class="col-10 float-end ">
+            <div class="col-12 float-end mb-5">
+              <a href="#!" class="float-end"><img src="Images/ad-animation.gif" class="img-fluid" alt=""></a>
+            </div>
+            <div class="col-12 float-end mb-5">
+              <a href="#!" class="float-end"><img src="Images/ad-animation.gif" class="img-fluid" alt=""></a>
+            </div>
+            <div class="col-12 float-end mb-5">
+              <a href="#!" class="float-end"><img src="Images/ad-animation.gif" class="img-fluid" alt=""></a>
+            </div>
+            <div class="col-12 float-end mb-5">
+              <a href="#!" class="float-end"><img src="Images/ad-animation.gif" class="img-fluid" alt=""></a>
+            </div>
+            <div class="col-12 float-end mb-5">
+              <a href="#!" class="float-end"><img src="Images/ad-animation.gif" class="img-fluid" alt=""></a>
+            </div>
+            <div class="col-12 float-end mb-5">
+              <a href="#!" class="float-end"><img src="Images/ad-animation.gif" class="img-fluid" alt=""></a>
+            </div>
+            <div class="col-12 float-end mb-5">
+              <a href="#!" class="float-end"><img src="Images/ad-animation.gif" class="img-fluid" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <script>
+          var TN_borders_Parents = document.getElementById("TN_borders_Parent");
+          var TN_borderss = document.getElementsByClassName("TN_borders");
+          var aTitle_firstChild_grids = document.getElementsByClassName("aTitle_firstChild_grid");
+          var aDesc_firstChild_grids = document.getElementsByClassName("aDesc_firstChild_grid");
+          var author_firstChild_grids = document.getElementsByClassName("author_firstChild_grid");
+          var TN_postTimess = document.getElementsByClassName("TN_postTimes");
+          var parent_TN_imgGrid_358s = document.getElementsByClassName("parent_TN_imgGrid_358");
+          var TN_imgGrid_358s = document.getElementsByClassName("TN_imgGrid_358");
+          var TN_imgGrid_358_as = document.getElementsByClassName("TN_imgGrid_358_a");
+          var TN_imgGrid_358_a_imgs = document.getElementsByClassName("TN_imgGrid_358_a_img");
+          var TN_imgGrid_330s = document.getElementsByClassName("TN_imgGrid_330");
+          var TN_CategoryTitles = document.getElementsByClassName("TN_CategoryTitle");
+          var NewsDescs = document.getElementsByClassName("NewsDesc");
+          var Ad_TNparts = document.getElementById("Ad_TNpart");
+          var i;
+
+          // set Grid/List State on Refreshing site
+          $("#listView").on('click', function() {
+            listView();
+            setCookie('list');
+          });
+          
+          $("#gridView").on('click', function() {
+            gridView();
+            setCookie('grid');
+          });
+          
+          function setCookie(name) {
+            document.cookie = name;
+          }
+
+          // List View
+          function listView() {
+            for (i = 0; i < TN_borderss.length; i++) {
+
+              TN_borders_Parents.classList.add("col-9");
+              TN_borders_Parents.classList.remove("col-12");
+
+              TN_borderss[0].classList.add("col-xxl-3","col-xl-4","col-lg-4","col-md-6");
+              TN_borderss[0].classList.remove("col-xxl-8","col-xl-12","col-lg-12","col-md-12");
+
+              TN_borderss[1].classList.add("col-xxl-3");
+              TN_borderss[1].classList.remove("col-xxl-4");
+
+              parent_TN_imgGrid_358s[0].classList.add("col-10");
+              parent_TN_imgGrid_358s[0].classList.remove("col-12");
+              TN_imgGrid_358s[0].classList.remove("col-12");
+              TN_imgGrid_358_as[0].classList.remove("col-12");
+              TN_imgGrid_358_a_imgs[0].classList.remove("col-12");
+              NewsDescs[0].classList.remove("TN_NewsDesc");
+              TN_CategoryTitles[0].classList.remove("btn", "text-white", "w-25", "btn_firstChild_grid");
+              aTitle_firstChild_grids[0].classList.remove("fw-bold", "text-white");
+              aDesc_firstChild_grids[0].classList.remove("text-white");
+              author_firstChild_grids[0].classList.remove("d-none");
+
+              parent_TN_imgGrid_358s[i].classList.add("col-10");
+              parent_TN_imgGrid_358s[i].classList.remove("col-12");
+
+              TN_borderss[i].style.transition = ".5s all ease";
+              TN_borderss[i].classList.remove("TN_borders_grid");
+              TN_borderss[i].classList.add("w-100");
+              TN_borderss[i].style.borderBottom = ".5px solid rgb(219, 219, 219)";
+
+              TN_postTimess[i].classList.remove("postTime_grid");
+
+              TN_imgGrid_358s[i].classList.remove("img_grid_358");
+              TN_imgGrid_330s[i].classList.remove("img_grid_330");
+
+              // Ad_TNparts.classList.add("d-none","d-sm-block");
+
+              TN_CategoryTitles[i].style.marginTop = "0";
+              // NewsDescs[i].style.width = "66.66666667%";
+              NewsDescs[i].classList.add("col-xl-8","col-lg-8","col-md-8","col-sm-12");
+              NewsDescs[i].classList.remove("col-12");
+            }
+          }
+          // Grid View
+          function gridView() {
+            for (i = 0; i < TN_borderss.length; i++) {
+
+              TN_borders_Parents.classList.add("col-12");
+              TN_borders_Parents.classList.remove("col-9");
+
+              TN_borderss[0].classList.remove("col-xxl-3","col-xl-4","col-lg-4","col-md-6");
+              TN_borderss[0].classList.add("col-xxl-8","col-xl-12","col-lg-12","col-md-12");
+              
+              TN_borderss[1].classList.add("col-xxl-4");
+              TN_borderss[1].classList.remove("col-xxl-3");
+
+              parent_TN_imgGrid_358s[0].classList.add("col-12");
+              parent_TN_imgGrid_358s[0].classList.remove("col-10");
+              TN_imgGrid_358s[0].classList.add("col-12");
+              TN_imgGrid_358_as[0].classList.add("col-12");
+              TN_imgGrid_358_a_imgs[0].classList.add("col-12");
+              NewsDescs[0].classList.add("TN_NewsDesc");
+              TN_CategoryTitles[0].classList.add("btn", "text-white", "w-25", "btn_firstChild_grid");
+              aTitle_firstChild_grids[0].classList.add("fw-bold", "text-white");
+              aDesc_firstChild_grids[0].classList.add("fw-bold", "text-white");
+              author_firstChild_grids[0].classList.add("d-none");
+
+              parent_TN_imgGrid_358s[i].classList.add("col-12");
+              parent_TN_imgGrid_358s[i].classList.remove("col-10");
+
+              TN_borderss[i].classList.add("TN_borders_grid");
+              TN_borderss[i].classList.remove("w-100");
+              TN_borderss[i].style.borderBottom = "none";
+
+              TN_postTimess[i].classList.add("postTime_grid");
+
+              TN_imgGrid_358s[i].classList.add("img_grid_358");
+              TN_imgGrid_330s[i].classList.add("img_grid_330");
+
+              // Ad_TNparts.classList.remove("d-sm-block");
+
+              TN_CategoryTitles[i].style.marginTop = "10px";
+              // NewsDescs[i].style.width = "102%";
+              NewsDescs[i].classList.add("col-12");
+              NewsDescs[i].classList.remove("col-xl-8","col-lg-8","col-md-8","col-sm-12");
+            }
+          }
+            
+          var grid_list_state = document.cookie;
+          if (grid_list_state == 'list'){
+            listView();
+          }
+          else if (grid_list_state == 'grid'){
+            gridView();
+          }
+          else {
+            listView();
+          }
+
+        </script>
+      </div>
+    </section>
+    <!-- end section TodaysNews -->
+    <!-- start section Socials -->
+    <section id="Socials" class="w-100 float-start mb-5 mt-2 ">
+      <div class=" ms-md-5 float-start " style="border: 3px solid #ddedfc; border-top-right-radius: 30px; border-bottom-right-radius: 30px; width: 93%;">
+        <div class="col-12 float-start ">
+          <div id="img-social" class="float-end col-lg-6 col-md-12 text-sm-center">
+            <img src="Images/social-bg.svg" class="p-5" alt="">
+          </div>
+          <div class="float-start Socials_desc col-lg-6 col-md-12" style="margin-top: 7%;">
+            <div class="float-start ms-4 ">
+              <p style="font-size: 20px; font-weight: bold; color: #004b94;">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+              <span style="font-size: 16px; font-weight: bold; color: #a0a4bc;">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</span>
+            </div>
+            <div id="Socials_icon" class="float-start mt-5 m-3 ">
+              <a href="#!"><i class="fa fa-instagram fa-3x"></i></a>
+              <a href="#!"><i class="fa fa-linkedin fa-3x"></i></a>
+              <a href="#!"><i class="fa fa-telegram fa-3x"></i></a>
+              <a href="#!"><i class="fa fa-twitter fa-3x"></i></a>
+              <a href="#!"><i class="fa fa-youtube fa-3x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section Socials -->
+    <!-- start section LastVideos -->
+    <section id="LastVideos" class="w-100 float-start mb-5 mt-2 ">
+      <h5 class=" float-start fw-bold ps-2 mb-5 h5_style ">اخرین ویدئوها</h5>
+      <div class="container-fluid ">
+        <div class="col-12 float-start ">
+          <div id="LastVideos_bigPic" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 xs_col d-xxl-none d-xl-block mb-3 float-end ">
+            <div class="float-start col-12 ">
+              <div class="card border-0 img-hover-zoom img-hover-zoom--xyz ">
+                <a href="#!" class=" float-start overflow-hidden"><img src="Images/728 x 728.svg" class="img-fluid w-100" alt=""></a>
+                <div class="card-body position-absolute pb-4 " style="bottom: 3%;">
+                  <a href="#!"><h5 class="card-title btn text-white ">علمی</h5></a>
+                  <br>
+                  <a href="#!" class="text-decoration-none text-white float-start ">
+                    <p class="card-text text-white fw-bold fs-4 ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ. </p>
+                    <p class="card-text text-white fw-bold mt-3 " style="font-size: 12px;">17 شهریور 1401</p>
+                    <p class="card-text text-white fw-bold mt-5 " style="font-size: 12px;">
+                      <img src="Images/user1.jpg" class="rounded-circle " width="50" height="50" alt="">
+                      <img src="Images/user2.png" class="rounded-circle " width="50" height="50" alt="">
+                      <img src="Images/user1.jpg" class="rounded-circle " width="50" height="50" alt="">
+                      <span class="card-text text-white fw-bold mt-3" style="font-size: 15px;">10 نفر تاکنون در مکالمه این پست شرکت کرده اند </span>
+                    </p>
+                  </a>
+                </div>  
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12 col-sm-12 xs_col float-start ">
+            <div class="container-fluid">
+              <div class="row LVcard_parent ">
+                <div class="card col-xl-6 col-lg-6 col-md-6 col-sm-12 p-0 border-0 float-start img-hover-zoom img-hover-zoom--xyz ">
+                  <div class="float-start ">
+                    <a href="Second.html" class="float-start overflow-hidden w-100 position-relative ">
+                      <img src="Images/355 x 200.svg" class="card-img-top img-fluid " alt="...">
+                      <i class="fa fa-play fa-4x text-primary opacity-25 "></i>
+                    </a>
+                  </div>
+                  <div class="card-body float-start ">
+                    <a href="Second.html"><h5 class="card-title ">نقد و بررسی</h5></a>
+                    <a href="Second.html"><p class="card-text mt-2 ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p></a>
+                    <span class=" mt-5 float-start ">1 روز قبل</span>
+                  </div>
+                </div>
+                <div class="card col-xl-6 col-lg-6 col-md-6 col-sm-12 p-0 border-0 float-start img-hover-zoom img-hover-zoom--xyz ">
+                  <div class="float-start ">
+                    <a href="#!" class="float-start overflow-hidden w-100 position-relative ">
+                      <img src="Images/355 x 200.svg" class="card-img-top img-fluid " alt="...">
+                      <i class="fa fa-play fa-4x text-primary opacity-25 "></i>
+                    </a>
+                  </div>
+                  <div class="card-body float-start ">
+                    <a href="#!"><h5 class="card-title ">نقد و بررسی</h5></a>
+                    <a href="#!"><p class="card-text mt-2 ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p></a>
+                    <span class=" mt-5 float-start ">1 روز قبل</span>
+                  </div>
+                </div>
+                <div class="card col-xl-6 col-lg-6 col-md-6 col-sm-12 p-0 border-0 float-start img-hover-zoom img-hover-zoom--xyz ">
+                  <div class="float-start ">
+                    <a href="#!" class="float-start overflow-hidden w-100 position-relative ">
+                      <img src="Images/355 x 200.svg" class="card-img-top img-fluid " alt="...">
+                      <i class="fa fa-play fa-4x text-primary opacity-25 "></i>
+                    </a>
+                  </div>
+                  <div class="card-body float-start ">
+                    <a href="#!"><h5 class="card-title ">نقد و بررسی</h5></a>
+                    <a href="#!"><p class="card-text mt-2 ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p></a>
+                    <span class=" mt-5 float-start ">1 روز قبل</span>
+                  </div>
+                </div>
+                <div class="card col-xl-6 col-lg-6 col-md-6 col-sm-12 p-0 border-0 float-start img-hover-zoom img-hover-zoom--xyz ">
+                  <div class="float-start ">
+                    <a href="#!" class="float-start overflow-hidden w-100 position-relative ">
+                      <img src="Images/355 x 200.svg" class="card-img-top img-fluid " alt="...">
+                      <i class="fa fa-play fa-4x text-primary opacity-25 "></i>
+                    </a>
+                  </div>
+                  <div class="card-body float-start ">
+                    <a href="#!"><h5 class="card-title ">نقد و بررسی</h5></a>
+                    <a href="#!"><p class="card-text mt-2 ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p></a>
+                    <span class=" mt-5 float-start ">1 روز قبل</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="LastVideos_bigPic" class="col-xxl-6 d-xxl-block d-lg-none d-md-none d-sm-none d-xs-none float-end ">
+            <div class="float-start col-12 ">
+              <div class="card border-0 img-hover-zoom img-hover-zoom--xyz ">
+                <a href="#!" class=" float-start overflow-hidden"><img src="Images/728 x 728.svg" class="img-fluid w-100" alt=""></a>
+                <div class="card-body position-absolute pb-4 " style="bottom: 3%;">
+                  <a href="#!"><h5 class="card-title btn text-white ">علمی</h5></a>
+                  <br>
+                  <a href="#!" class="text-decoration-none text-white float-start ">
+                    <p class="card-text text-white fw-bold fs-4 ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ. </p>
+                    <p class="card-text text-white fw-bold mt-3 " style="font-size: 12px;">17 شهریور 1401</p>
+                    <p class="card-text text-white fw-bold mt-5 " style="font-size: 12px;">
+                      <img src="Images/user1.jpg" class="rounded-circle " width="50" height="50" alt="">
+                      <img src="Images/user2.png" class="rounded-circle " width="50" height="50" alt="">
+                      <img src="Images/user1.jpg" class="rounded-circle " width="50" height="50" alt="">
+                      <span class="card-text text-white fw-bold mt-3" style="font-size: 15px;">10 نفر تاکنون در مکالمه این پست شرکت کرده اند </span>
+                    </p>
+                  </a>
+                </div>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section LastVideos -->
+    <!-- start section TechnologyLastNews -->
+    <section id="TechnologyLastNews" class="w-100 float-start mb-5 mt-2 ">
+      <h5 class=" float-start fw-bold ps-2 mb-5 h5_style ">آخرین اخبار فناوری</h5>
+      <div class="container-fluid ">
+        <div class="col-12 float-start ">
+          <div id="TechnologyLastNews_bigPic" class="col-xxl-7 col-xl-7 col-lg-12 col-md-12 col-sm-12 xs_col float-start mt-2">
+            <div class="float-start col-12 ">
+              <div class="card border-0 img-hover-zoom img-hover-zoom--xyz ">
+                <a href="#!" class=" float-start overflow-hidden "><img src="Images/931 x 600.svg" class="w-100 img-fluid " alt=""></a>
+                <div class="card-body position-absolute pb-4 " style="bottom: 3%;">
+                  <a href="#!"><h5 class="card-title btn text-white ">علمی</h5></a>
+                  <br>
+                  <a href="#!" class="text-decoration-none text-white float-start ">
+                    <p class="card-text text-white fw-bold fs-4 ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ. </p>
+                    <p class="card-text text-white fw-bold mt-3 w-50" style="font-size: 12px; ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-5 col-xl-5 col-lg-12 col-md-12 col-sm-12 xs_col float-end ps-2 ">
+            <div class="container-fluid ">
+              <div class="row TLNcard_parent ">
+                <div class="card col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3 p-0 border-0 float-start img-hover-zoom img-hover-zoom--xyz ">
+                  <div class="d-flex float-start ">
+                    <div class="float-start flex-shrink-0 ">
+                      <a href="#!" class="float-start overflow-hidden ">
+                        <img src="Images/100 x 100.svg" class="card-img-top img-fluid " width="100" height="100" alt="...">
+                      </a>
+                    </div>
+                    <div class="card-body float-start flex-grow-1 ms-3 mt-2 p-0 ">
+                      <a href="#!"><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p></a>
+                      <span class="mt-4 float-start "> نوشته شده توسط ادمین 1 | 17 ساعت قبل</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3 p-0 border-0 float-start img-hover-zoom img-hover-zoom--xyz ">
+                  <div class="d-flex float-start ">
+                    <div class="float-start flex-shrink-0 ">
+                      <a href="#!" class="float-start overflow-hidden ">
+                        <img src="Images/100 x 100.svg" class="card-img-top img-fluid " width="100" height="100" alt="...">
+                      </a>
+                    </div>
+                    <div class="card-body float-start flex-grow-1 ms-3 mt-2 p-0 ">
+                      <a href="#!"><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p></a>
+                      <span class="mt-4 float-start "> نوشته شده توسط ادمین 1 | 17 ساعت قبل</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3 p-0 border-0 float-start img-hover-zoom img-hover-zoom--xyz ">
+                  <div class="d-flex float-start ">
+                    <div class="float-start flex-shrink-0 ">
+                      <a href="#!" class="float-start overflow-hidden ">
+                        <img src="Images/100 x 100.svg" class="card-img-top img-fluid " width="100" height="100" alt="...">
+                      </a>
+                    </div>
+                    <div class="card-body float-start flex-grow-1 ms-3 mt-2 p-0 ">
+                      <a href="#!"><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p></a>
+                      <span class="mt-4 float-start "> نوشته شده توسط ادمین 1 | 17 ساعت قبل</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3 p-0 border-0 float-start img-hover-zoom img-hover-zoom--xyz ">
+                  <div class="d-flex float-start ">
+                    <div class="float-start flex-shrink-0 ">
+                      <a href="#!" class="float-start overflow-hidden ">
+                        <img src="Images/100 x 100.svg" class="card-img-top img-fluid " width="100" height="100" alt="...">
+                      </a>
+                    </div>
+                    <div class="card-body float-start flex-grow-1 ms-3 mt-2 p-0 ">
+                      <a href="#!"><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p></a>
+                      <span class="mt-4 float-start "> نوشته شده توسط ادمین 1 | 17 ساعت قبل</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3 p-0 border-0 float-start img-hover-zoom img-hover-zoom--xyz ">
+                  <div class="d-flex float-start ">
+                    <div class="float-start flex-shrink-0 ">
+                      <a href="#!" class="float-start overflow-hidden ">
+                        <img src="Images/100 x 100.svg" class="card-img-top img-fluid " width="100" height="100" alt="...">
+                      </a>
+                    </div>
+                    <div class="card-body float-start flex-grow-1 ms-3 mt-2 p-0 ">
+                      <a href="#!"><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p></a>
+                      <span class="mt-4 float-start "> نوشته شده توسط ادمین 1 | 17 ساعت قبل</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="ad-ES" class="float-start xs_col col-12 text-center mt-5">
+        <div class="float-start col-12 ms-auto ">
+          <a href="#!" class="ms-auto w-100"><img src="Images/ad-animation3.gif" class="img-fluid" style="transform: rotate(360deg); height: 100px; width: 500px;" alt=""></a>
+        </div>
+      </div>
+    </section>
+    <!-- end section TechnologyLastNews -->
+    <!-- start section RelatedNews -->
+    <section id="RelatedNews" class="w-100 float-start mb-5 mt-2 ">
+      <div class="container-fluid ">
+        <div class="col-12 float-start ">
+          <div id="CarRelatedNews" class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 xs_col float-start mt-2 ps-3 ">
+            <h5 class=" float-start fw-bold ps-2 mb-5 h5_style ">اخبار مرتبط با خودرو</h5>
+            <div class="col-12 float-start">
+              <div class="float-start col-12 ">
+                <div class="card border-0 img-hover-zoom img-hover-zoom--xyz ">
+                  <a href="#!" class="float-start overflow-hidden "><img src="Images/480 x 306.svg" class="w-100 img-fluid " alt=""></a>
+                  <div class="card-body position-absolute pb-4 " style="bottom: 3%;">
+                    <a href="#!" class="text-decoration-none text-white float-start w-100 text-center">
+                      <p class="mt-4 float-start w-100 text-center fw-bold " style="font-size: 12px;"> نوشته شده توسط ادمین 1 | 17 ساعت قبل</p>
+                    </a>
+                    <a href="#!" class="text-decoration-none text-white float-start w-100 text-center ">
+                      <p class="card-text text-white fw-bold ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 xs_col float-start mt-4 ">
+                <div class="container-fluid ">
+                  <div class="row RN_CarRelatedNews ">
+                    <div class="card col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3 p-0 border-0 float-start img-hover-zoom img-hover-zoom--xyz ">
+                    <div class="d-flex float-start ">
+                      <div class="float-start flex-shrink-0 ">
+                        <a href="#!" class="float-start overflow-hidden ">
+                          <img src="Images/100 x 100.svg" class="card-img-top img-fluid " width="100" height="100" alt="...">
+                        </a>
+                      </div>
+                      <div class="card-body float-start flex-grow-1 ms-3 mt-2 p-0 ">
+                        <p class="float-start w-100 fw-bold " style="font-size: 12px;"> نوشته شده توسط ادمین 1 | 17 ساعت قبل</p>
+                        <a href="#!" class="text-decoration-none"><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.</p></a>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="card col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3 p-0 border-0 float-start img-hover-zoom img-hover-zoom--xyz ">
+                    <div class="d-flex float-start ">
+                      <div class="float-start flex-shrink-0 ">
+                        <a href="#!" class="float-start overflow-hidden ">
+                          <img src="Images/100 x 100.svg" class="card-img-top img-fluid " width="100" height="100" alt="...">
+                        </a>
+                      </div>
+                      <div class="card-body float-start flex-grow-1 ms-3 mt-2 p-0 ">
+                        <p class="float-start w-100 fw-bold " style="font-size: 12px;"> نوشته شده توسط ادمین 1 | 17 ساعت قبل</p>
+                        <a href="#!" class="text-decoration-none"><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.</p></a>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="card col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3 p-0 border-0 float-start img-hover-zoom img-hover-zoom--xyz ">
+                    <div class="d-flex float-start ">
+                      <div class="float-start flex-shrink-0 ">
+                        <a href="#!" class="float-start overflow-hidden ">
+                          <img src="Images/100 x 100.svg" class="card-img-top img-fluid " width="100" height="100" alt="...">
+                        </a>
+                      </div>
+                      <div class="card-body float-start flex-grow-1 ms-3 mt-2 p-0 ">
+                        <p class="float-start w-100 fw-bold " style="font-size: 12px;"> نوشته شده توسط ادمین 1 | 17 ساعت قبل</p>
+                        <a href="#!" class="text-decoration-none"><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.</p></a>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="card col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3 p-0 border-0 float-start img-hover-zoom img-hover-zoom--xyz ">
+                    <div class="d-flex float-start ">
+                      <div class="float-start flex-shrink-0 ">
+                        <a href="#!" class="float-start overflow-hidden ">
+                          <img src="Images/100 x 100.svg" class="card-img-top img-fluid " width="100" height="100" alt="...">
+                        </a>
+                      </div>
+                      <div class="card-body float-start flex-grow-1 ms-3 mt-2 p-0 ">
+                        <p class="float-start w-100 fw-bold " style="font-size: 12px;"> نوشته شده توسط ادمین 1 | 17 ساعت قبل</p>
+                        <a href="#!" class="text-decoration-none"><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.</p></a>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="ScientificRelatedNews" class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 xs_col float-start mt-2 ps-3 ">
+            <h5 class=" float-start fw-bold ps-2 mb-5 h5_style ">اخبار مرتبط با علمی</h5>
+            <div class="col-12 float-start">
+              <div class="float-start col-12 ">
+                <div class="card border-0 img-hover-zoom img-hover-zoom--xyz ">
+                  <a href="#!" class="float-start overflow-hidden "><img src="Images/480 x 306.svg" class="w-100 img-fluid " alt=""></a>
+                  <div class="card-body position-absolute pb-4 " style="bottom: 3%;">
+                    <a href="#!" class="text-decoration-none text-white float-start w-100 text-center">
+                      <p class="mt-4 float-start w-100 text-center fw-bold " style="font-size: 12px;"> نوشته شده توسط ادمین 1 | 17 ساعت قبل</p>
+                    </a>
+                    <a href="#!" class="text-decoration-none text-white float-start w-100 text-center ">
+                      <p class="card-text text-white fw-bold ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 xs_col float-start mt-4 ">
+              <div class="container-fluid ">
+                <div class="row RN_ScientificRelatedNews ">
+                  <div class="card col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3 p-0 border-0 float-start img-hover-zoom img-hover-zoom--xyz ">
+                    <div class="d-flex float-start ">
+                      <div class="float-start flex-shrink-0 ">
+                        <a href="#!" class="float-start overflow-hidden ">
+                          <img src="Images/100 x 100.svg" class="card-img-top img-fluid " width="100" height="100" alt="...">
+                        </a>
+                      </div>
+                      <div class="card-body float-start flex-grow-1 ms-3 mt-2 p-0 ">
+                        <p class="float-start w-100 fw-bold " style="font-size: 12px;"> نوشته شده توسط ادمین 1 | 17 ساعت قبل</p>
+                        <a href="#!" class="text-decoration-none"><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.</p></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3 p-0 border-0 float-start img-hover-zoom img-hover-zoom--xyz ">
+                    <div class="d-flex float-start ">
+                      <div class="float-start flex-shrink-0 ">
+                        <a href="#!" class="float-start overflow-hidden ">
+                          <img src="Images/100 x 100.svg" class="card-img-top img-fluid " width="100" height="100" alt="...">
+                        </a>
+                      </div>
+                      <div class="card-body float-start flex-grow-1 ms-3 mt-2 p-0 ">
+                        <p class="float-start w-100 fw-bold " style="font-size: 12px;"> نوشته شده توسط ادمین 1 | 17 ساعت قبل</p>
+                        <a href="#!" class="text-decoration-none"><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.</p></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3 p-0 border-0 float-start img-hover-zoom img-hover-zoom--xyz ">
+                    <div class="d-flex float-start ">
+                      <div class="float-start flex-shrink-0 ">
+                        <a href="#!" class="float-start overflow-hidden ">
+                          <img src="Images/100 x 100.svg" class="card-img-top img-fluid " width="100" height="100" alt="...">
+                        </a>
+                      </div>
+                      <div class="card-body float-start flex-grow-1 ms-3 mt-2 p-0 ">
+                        <p class="float-start w-100 fw-bold " style="font-size: 12px;"> نوشته شده توسط ادمین 1 | 17 ساعت قبل</p>
+                        <a href="#!" class="text-decoration-none"><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.</p></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3 p-0 border-0 float-start img-hover-zoom img-hover-zoom--xyz ">
+                    <div class="d-flex float-start ">
+                      <div class="float-start flex-shrink-0 ">
+                        <a href="#!" class="float-start overflow-hidden ">
+                          <img src="Images/100 x 100.svg" class="card-img-top img-fluid " width="100" height="100" alt="...">
+                        </a>
+                      </div>
+                      <div class="card-body float-start flex-grow-1 ms-3 mt-2 p-0 ">
+                        <p class="float-start w-100 fw-bold " style="font-size: 12px;"> نوشته شده توسط ادمین 1 | 17 ساعت قبل</p>
+                        <a href="#!" class="text-decoration-none"><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.</p></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div id="BusinessRelatedNews" class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 xs_col float-start mt-2 ps-3 ">
+            <h5 class=" float-start fw-bold ps-2 mb-5 h5_style ">اخبار مرتبط با کسب و کار</h5>
+            <div class="col-12 float-start">
+              <div class="float-start col-12 ">
+                <div class="card border-0 img-hover-zoom img-hover-zoom--xyz ">
+                  <a href="#!" class="float-start overflow-hidden "><img src="Images/480 x 306.svg" class="w-100 img-fluid " alt=""></a>
+                  <div class="card-body position-absolute pb-4 " style="bottom: 3%;">
+                    <a href="#!" class="text-decoration-none text-white float-start w-100 text-center">
+                      <p class="mt-4 float-start w-100 text-center fw-bold " style="font-size: 12px;"> نوشته شده توسط ادمین 1 | 17 ساعت قبل</p>
+                    </a>
+                    <a href="#!" class="text-decoration-none text-white float-start w-100 text-center ">
+                      <p class="card-text text-white fw-bold ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 xs_col float-start mt-4 ">
+              <div class="container-fluid ">
+                <div class="row RN_BusinessRelatedNews ">
+                  <div class="card col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3 p-0 border-0 float-start img-hover-zoom img-hover-zoom--xyz ">
+                    <div class="d-flex float-start ">
+                      <div class="float-start flex-shrink-0 ">
+                        <a href="#!" class="float-start overflow-hidden ">
+                          <img src="Images/100 x 100.svg" class="card-img-top img-fluid " width="100" height="100" alt="...">
+                        </a>
+                      </div>
+                      <div class="card-body float-start flex-grow-1 ms-3 mt-2 p-0 ">
+                        <p class="float-start w-100 fw-bold " style="font-size: 12px;"> نوشته شده توسط ادمین 1 | 17 ساعت قبل</p>
+                        <a href="#!" class="text-decoration-none"><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.</p></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3 p-0 border-0 float-start img-hover-zoom img-hover-zoom--xyz ">
+                    <div class="d-flex float-start ">
+                      <div class="float-start flex-shrink-0 ">
+                        <a href="#!" class="float-start overflow-hidden ">
+                          <img src="Images/100 x 100.svg" class="card-img-top img-fluid " width="100" height="100" alt="...">
+                        </a>
+                      </div>
+                      <div class="card-body float-start flex-grow-1 ms-3 mt-2 p-0 ">
+                        <p class="float-start w-100 fw-bold " style="font-size: 12px;"> نوشته شده توسط ادمین 1 | 17 ساعت قبل</p>
+                        <a href="#!" class="text-decoration-none"><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.</p></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3 p-0 border-0 float-start img-hover-zoom img-hover-zoom--xyz ">
+                    <div class="d-flex float-start ">
+                      <div class="float-start flex-shrink-0 ">
+                        <a href="#!" class="float-start overflow-hidden ">
+                          <img src="Images/100 x 100.svg" class="card-img-top img-fluid " width="100" height="100" alt="...">
+                        </a>
+                      </div>
+                      <div class="card-body float-start flex-grow-1 ms-3 mt-2 p-0 ">
+                        <p class="float-start w-100 fw-bold " style="font-size: 12px;"> نوشته شده توسط ادمین 1 | 17 ساعت قبل</p>
+                        <a href="#!" class="text-decoration-none"><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.</p></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3 p-0 border-0 float-start img-hover-zoom img-hover-zoom--xyz ">
+                    <div class="d-flex float-start ">
+                      <div class="float-start flex-shrink-0 ">
+                        <a href="#!" class="float-start overflow-hidden ">
+                          <img src="Images/100 x 100.svg" class="card-img-top img-fluid " width="100" height="100" alt="...">
+                        </a>
+                      </div>
+                      <div class="card-body float-start flex-grow-1 ms-3 mt-2 p-0 ">
+                        <p class="float-start w-100 fw-bold " style="font-size: 12px;"> نوشته شده توسط ادمین 1 | 17 ساعت قبل</p>
+                        <a href="#!" class="text-decoration-none"><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.</p></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section RelatedNews -->
+    <!-- start section Apps_SoftWares -->
+    <section id="Apps_SoftWares" class="w-100 float-start mt-2 ">
+      <h5 class=" float-start fw-bold ps-2 mb-5 h5_style">معرفی نرم افزار و اپلیکیشن</h5>
+      <div id="Apps_CardParent" class="float-start xs_col col-xl-12 col-lg-12 col-md-12 col-sm-12 pb-5 bg-white w-100 p-0 ">
+        <div class="float-start col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 xs_col p-0 ">
+            <div class="container-fluid ps-4">
+              <div class="row p-0 ">
+                <div class="float-start mt-2 p-0 m-0 w-100 ">
+                  <div class="owl-carousel owl-theme col ">
+                    <div class="item me-3 col img-hover-zoom img-hover-zoom--xyz">
+                      <div class="m-0 p-0 ">
+                        <div class="d-flex float-start ">
+                          <div class="card float-start flex-shrink-0 border-0">
+                            <a href="#!" class="float-start overflow-hidden ">
+                              <img src="Images/80 x 80.svg" class="card-img-top img-fluid " width="80" height="80" alt="...">
+                            </a>
+                          </div>
+                          <div class="card-body float-start flex-grow-1 ms-3 p-0 ">
+                            <p class="float-start w-100 fw-bold mb-0 lh-lg " style="font-size: 12px;">نرم افزار و اپلیکیشن</p>
+                            <a href="#!" class="text-decoration-none lh-lg "><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p></a>
+                            <p class="float-start w-100 fw-bold lh-lg " style="font-size: 12px;">در جعبه ابزار این هفته</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item me-3 col img-hover-zoom img-hover-zoom--xyz">
+                      <div class="m-0 p-0 ">
+                        <div class="d-flex float-start ">
+                          <div class="card float-start flex-shrink-0 border-0">
+                            <a href="#!" class="float-start overflow-hidden ">
+                              <img src="Images/80 x 80.svg" class="card-img-top img-fluid " width="80" height="80" alt="...">
+                            </a>
+                          </div>
+                          <div class="card-body float-start flex-grow-1 ms-3 p-0 ">
+                            <p class="float-start w-100 fw-bold mb-0 lh-lg " style="font-size: 12px;">نرم افزار و اپلیکیشن</p>
+                            <a href="#!" class="text-decoration-none lh-lg "><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p></a>
+                            <p class="float-start w-100 fw-bold lh-lg " style="font-size: 12px;">در جعبه ابزار این هفته</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item me-3 col img-hover-zoom img-hover-zoom--xyz">
+                      <div class="m-0 p-0 ">
+                        <div class="d-flex float-start ">
+                          <div class="card float-start flex-shrink-0 border-0">
+                            <a href="#!" class="float-start overflow-hidden ">
+                              <img src="Images/80 x 80.svg" class="card-img-top img-fluid " width="80" height="80" alt="...">
+                            </a>
+                          </div>
+                          <div class="card-body float-start flex-grow-1 ms-3 p-0 ">
+                            <p class="float-start w-100 fw-bold mb-0 lh-lg " style="font-size: 12px;">نرم افزار و اپلیکیشن</p>
+                            <a href="#!" class="text-decoration-none lh-lg "><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p></a>
+                            <p class="float-start w-100 fw-bold lh-lg " style="font-size: 12px;">در جعبه ابزار این هفته</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item me-3 col img-hover-zoom img-hover-zoom--xyz">
+                      <div class="m-0 p-0 ">
+                        <div class="d-flex float-start ">
+                          <div class="card float-start flex-shrink-0 border-0">
+                            <a href="#!" class="float-start overflow-hidden ">
+                              <img src="Images/80 x 80.svg" class="card-img-top img-fluid " width="80" height="80" alt="...">
+                            </a>
+                          </div>
+                          <div class="card-body float-start flex-grow-1 ms-3 p-0 ">
+                            <p class="float-start w-100 fw-bold mb-0 lh-lg " style="font-size: 12px;">نرم افزار و اپلیکیشن</p>
+                            <a href="#!" class="text-decoration-none lh-lg "><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p></a>
+                            <p class="float-start w-100 fw-bold lh-lg " style="font-size: 12px;">در جعبه ابزار این هفته</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item me-3 col img-hover-zoom img-hover-zoom--xyz">
+                      <div class="m-0 p-0 ">
+                        <div class="d-flex float-start ">
+                          <div class="card float-start flex-shrink-0 border-0">
+                            <a href="#!" class="float-start overflow-hidden ">
+                              <img src="Images/80 x 80.svg" class="card-img-top img-fluid " width="80" height="80" alt="...">
+                            </a>
+                          </div>
+                          <div class="card-body float-start flex-grow-1 ms-3 p-0 ">
+                            <p class="float-start w-100 fw-bold mb-0 lh-lg " style="font-size: 12px;">نرم افزار و اپلیکیشن</p>
+                            <a href="#!" class="text-decoration-none lh-lg "><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p></a>
+                            <p class="float-start w-100 fw-bold lh-lg " style="font-size: 12px;">در جعبه ابزار این هفته</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item me-3 col img-hover-zoom img-hover-zoom--xyz">
+                      <div class="m-0 p-0 ">
+                        <div class="d-flex float-start ">
+                          <div class="card float-start flex-shrink-0 border-0">
+                            <a href="#!" class="float-start overflow-hidden ">
+                              <img src="Images/80 x 80.svg" class="card-img-top img-fluid " width="80" height="80" alt="...">
+                            </a>
+                          </div>
+                          <div class="card-body float-start flex-grow-1 ms-3 p-0 ">
+                            <p class="float-start w-100 fw-bold mb-0 lh-lg " style="font-size: 12px;">نرم افزار و اپلیکیشن</p>
+                            <a href="#!" class="text-decoration-none lh-lg "><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p></a>
+                            <p class="float-start w-100 fw-bold lh-lg " style="font-size: 12px;">در جعبه ابزار این هفته</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item me-3 col img-hover-zoom img-hover-zoom--xyz">
+                      <div class="m-0 p-0 ">
+                        <div class="d-flex float-start ">
+                          <div class="card float-start flex-shrink-0 border-0">
+                            <a href="#!" class="float-start overflow-hidden ">
+                              <img src="Images/80 x 80.svg" class="card-img-top img-fluid " width="80" height="80" alt="...">
+                            </a>
+                          </div>
+                          <div class="card-body float-start flex-grow-1 ms-3 p-0 ">
+                            <p class="float-start w-100 fw-bold mb-0 lh-lg " style="font-size: 12px;">نرم افزار و اپلیکیشن</p>
+                            <a href="#!" class="text-decoration-none lh-lg "><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p></a>
+                            <p class="float-start w-100 fw-bold lh-lg " style="font-size: 12px;">در جعبه ابزار این هفته</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item me-3 col img-hover-zoom img-hover-zoom--xyz">
+                      <div class="m-0 p-0 ">
+                        <div class="d-flex float-start ">
+                          <div class="card float-start flex-shrink-0 border-0">
+                            <a href="#!" class="float-start overflow-hidden ">
+                              <img src="Images/80 x 80.svg" class="card-img-top img-fluid " width="80" height="80" alt="...">
+                            </a>
+                          </div>
+                          <div class="card-body float-start flex-grow-1 ms-3 p-0 ">
+                            <p class="float-start w-100 fw-bold mb-0 lh-lg " style="font-size: 12px;">نرم افزار و اپلیکیشن</p>
+                            <a href="#!" class="text-decoration-none lh-lg "><p class="card-text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p></a>
+                            <p class="float-start w-100 fw-bold lh-lg " style="font-size: 12px;">در جعبه ابزار این هفته</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!--Jquery -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+                <!-- Owl Carousel -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+                <!-- custom JS code after importing jquery and owl -->
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $(".owl-carousel").owlCarousel();
+                    });
+                
+                    $('.owl-carousel').owlCarousel({
+                        items:4,
+                        loop:false,
+                        rtl:true,
+                        margin:0,
+                        nav:true,
+                        lazyLoad:true,
+                        dots:false,
+                        autoHeight:false,
+                        autoWidth:true,
+                        autoplay:true,
+                        autoplayTimeout:10000,
+                        autoplayHoverPause:true,
+                        responsive: {
+                            0: {
+                                items: 2
+                            },
+                            600: {
+                                items: 2
+                            },
+                            1000: {
+                                items: 3
+                            },
+                            1200: {
+                                items: 3
+                            },
+                            1400: {
+                                items: 4
+                            }
+                        }
+                    });
+                </script>
+                </div>
+            </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- end section Apps_SoftWares -->
+    <!-- start section additionales -->
+    <section id="additionales" class="w-100 float-start ">
+      <button class="scrollToTopBtn"><i class="fa fa-arrow-circle-up"></i>
+        <script>
+          var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
+            var rootElement = document.documentElement;
+    
+            function handleScroll() {
+            // Do something on scroll
+            var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+            if (rootElement.scrollTop / scrollTotal > 0.05) {
+            // Show button
+            scrollToTopBtn.classList.add("showBtn");
+            } else {
+            // Hide button
+            scrollToTopBtn.classList.remove("showBtn");
+            }
+            }
+    
+            function scrollToTop() {
+            // Scroll to top logic
+            rootElement.scrollTo({
+              top: 0,
+              behavior: "smooth"
+              });
+            }
+            scrollToTopBtn.addEventListener("click", scrollToTop);
+            document.addEventListener("scroll", handleScroll);
+        </script>
+      </button>
+      <div id="submit_FeedBack" class="">
+        <a href="#!" data-bs-toggle="modal" data-bs-target="#FeedBackModal">
+          <i class="fa fa-comment "></i> ثبت بازخورد</a>
+        <!-- Modal -->
+        <div class="modal fade" id="FeedBackModal" tabindex="-1" aria-labelledby="FeedBackModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="FeedBackModalLabel">
+                  <h4 class="fw-bold" style="color: #004b94; font-size: 16px;">لطفا میزان رضایت خود را از دیجیاتو انتخاب کنید.</h4>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="float-start w-100">
+                  <img src="Images/faces-5.svg" alt="">
+                  <img src="Images/faces-4.svg" alt="">
+                  <img src="Images/faces-3.svg" alt="">
+                  <img src="Images/faces-2.svg" alt="">
+                  <img src="Images/faces-1.svg" alt="">
+                </div>
+                <div class="float-start w-100 mt-2">
+                  <p class="col-9 float-start">واقعا راضیم</p>
+                  <p class="col-3 float-end">اصلا راضی نیستم</p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger w-75">ثبت نظر</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section additionales -->
+    <!-- start section sec_footer -->
+    <footer id="sec_footer" class="w-100 float-start mt-2 mb-0 ">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="col-12 float-start">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 xs_col float-start mt-5 ">
+              <div class="float-start " style=" width: 100%; ">
+                <div class="float-start ms-4 ">
+                  <p style="font-size: 16px; font-weight: bold; color: #004b94;">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                  <span style="font-size: 12px; font-weight: bold; color: #a0a4bc;">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</span>
+                </div>
+                <div id="Socials_icon" class="float-start mt-5 m-3 ">
+                  <a href="#!"><i class="fa fa-instagram fa-2x"></i></a>
+                  <a href="#!"><i class="fa fa-linkedin fa-2x"></i></a>
+                  <a href="#!"><i class="fa fa-telegram fa-2x"></i></a>
+                  <a href="#!"><i class="fa fa-twitter fa-2x"></i></a>
+                  <a href="#!"><i class="fa fa-youtube fa-2x"></i></a>
+                </div>
+              </div>
+            </div>
+            <div id="SubmitEmail" class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 xs_col float-end mt-5 ps-4 ">
+              <h6 style="color: #004b94;">عضویت در خبرنامه</h6>
+              <div class="input-group mb-1">
+                <input type="text" class="form-control p-3" placeholder="نشانی پست الکترونیک خود را وارد نمایید" 
+                       aria-label="Username" aria-describedby="btn_join">
+                <button id="btn_join" class="btn btn-danger">عضویت</button>
+              </div>
+              <p class="ms-2">مطمئن باشید که هرگز از سمت ما ایمیل‌های مزاحم (اسپم) دریافت نخواهید کرد.</p>
+            </div>
+          </div>
+        </div>
+        <hr class="w-100 float-start">
+        <div id="ul-list" class="container-fluid">
+          <!-- CollapseListFooter -->
+          <div id="CollapseListFooter" class="col-12 float-start d-md-show-767 d-lg-none mb-5" style=" flex-wrap: wrap;">
+            <div class="accordion " id="accordionExample" >
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTech">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTech" 
+                          aria-expanded="false" aria-controls="collapseTech">
+                    تکنولوژی
+                  </button>
+                </h2>
+                <div id="collapseTech" class="accordion-collapse collapse" aria-labelledby="headingTech" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="float-start col-12 ">
+                      <li><a href="#!">تکنولوژی 1</a></li>
+                      <li><a href="#!">تکنولوژی 2</a></li>
+                      <li><a href="#!">تکنولوژی 3</a></li>
+                      <li><a href="#!">تکنولوژی 4</a></li>
+                      <li><a href="#!">تکنولوژی 5</a></li>
+                      <li><a href="#!">تکنولوژی 6</a></li>
+                      <li><a href="#!">تکنولوژی 7</a></li>
+                      <li><a href="#!">تکنولوژی 8</a></li>
+                      <li><a href="#!">تکنولوژی 9تکنولوژی 9</a></li>
+                      <li><a href="#!">تکنولوژی 10</a></li>
+                      <li><a href="#!">تکنولوژی 11</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingCar">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCar" 
+                          aria-expanded="false" aria-controls="collapseCar">
+                          خودرو
+                  </button>
+                </h2>
+                <div id="collapseCar" class="accordion-collapse collapse" aria-labelledby="headingCar" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="float-start col-12 ">
+                      <li><a href="#!">خودرو 1</a></li>
+                      <li><a href="#!">خودرو 2</a></li>
+                      <li><a href="#!">خودرو 3خودرو 3</a></li>
+                      <li><a href="#!">خودرو 4</a></li>
+                      <li><a href="#!">خودرو 5</a></li>
+                      <li><a href="#!">خودرو 6</a></li>
+                      <li><a href="#!">خودرو 7</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingReview">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReview" 
+                          aria-expanded="false" aria-controls="collapseReview">
+                          نقد و بررسی
+                  </button>
+                </h2>
+                <div id="collapseReview" class="accordion-collapse collapse" aria-labelledby="headingReview" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="float-start col-12 ">
+                      <li><a href="#!">نقد و بررسی 1</a></li>
+                      <li><a href="#!">نقد و بررسی 2</a></li>
+                      <li><a href="#!">نقد و بررسی 3</a></li>
+                      <li><a href="#!">نقد و بررسی 4نقد و بررسی 4</a></li>
+                      <li><a href="#!">نقد و بررسی 5</a></li>
+                      <li><a href="#!">نقد و بررسی 6نقد و بررسی 6</a></li>
+                      <li><a href="#!">نقد و بررسی 7</a></li>
+                      <li><a href="#!">نقد و بررسی 8</a></li>
+                      <li><a href="#!">نقد و بررسی 9</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingVideo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVideo" 
+                          aria-expanded="false" aria-controls="collapseVideo">
+                          ویدئو
+                  </button>
+                </h2>
+                <div id="collapseVideo" class="accordion-collapse collapse" aria-labelledby="headingVideo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="float-start col-12 ">
+                      <li><a href="#!">ویدئو 1</a></li>
+                      <li><a href="#!">ویدئو 2ویدئو 2</a></li>
+                      <li><a href="#!">ویدئو 3</a></li>
+                      <li><a href="#!">ویدئو 4</a></li>
+                      <li><a href="#!">ویدئو 5</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEducation">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEducation" 
+                          aria-expanded="false" aria-controls="collapseEducation">
+                          آموزش
+                  </button>
+                </h2>
+                <div id="collapseEducation" class="accordion-collapse collapse" aria-labelledby="headingEducation" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="float-start col-12 ">
+                      <li><a href="#!">آموزش 1</a></li>
+                      <li><a href="#!">آموزش 2</a></li>
+                      <li><a href="#!">آموزش 3آموزش 3</a></li>
+                      <li><a href="#!">آموزش 4</a></li>
+                      <li><a href="#!">آموزش 5</a></li>
+                      <li><a href="#!">آموزش 6</a></li>
+                      <li><a href="#!">آموزش 7</a></li>
+                      <li><a href="#!">آموزش 8</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingScientific">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseScientific" 
+                          aria-expanded="false" aria-controls="collapseScientific">
+                          علمی
+                  </button>
+                </h2>
+                <div id="collapseScientific" class="accordion-collapse collapse" aria-labelledby="headingScientific" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="float-start col-12 ">
+                      <li><a href="#!">علمی 1</a></li>
+                      <li><a href="#!">علمی 2علمی 2</a></li>
+                      <li><a href="#!">علمی 3</a></li>
+                      <li><a href="#!">علمی 4علمی 4علمی 4</a></li>
+                      <li><a href="#!">علمی 5</a></li>
+                      <li><a href="#!">علمی 6</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingBusiness">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBusiness" 
+                          aria-expanded="false" aria-controls="collapseBusiness">
+                          کسب و کار
+                  </button>
+                </h2>
+                <div id="collapseBusiness" class="accordion-collapse collapse" aria-labelledby="headingBusiness" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="float-start col-12 ">
+                      <li><a href="#!">کسب و کار 1</a></li>
+                      <li><a href="#!">کسب و کار 2</a></li>
+                      <li><a href="#!">کسب و کار 3کسب و کار 3</a></li>
+                      <li><a href="#!">کسب و کار 4</a></li>
+                      <li><a href="#!">کسب و کار 5</a></li>
+                      <li><a href="#!">کسب و کار 6</a></li>
+                      <li><a href="#!">کسب و کار 7</a></li>
+                      <li><a href="#!">کسب و کار 8</a></li>
+                      <li><a href="#!">کسب و کار 9</a></li>
+                      <li><a href="#!">کسب و کار 10</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingDitiato">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDigiato" 
+                          aria-expanded="false" aria-controls="collapseDigiato">
+                          دیجیاتو
+                  </button>
+                </h2>
+                <div id="collapseDigiato" class="accordion-collapse collapse" aria-labelledby="headingDitiato" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="float-start col-12 ">
+                      <li><a href="#!">دیجیاتو 1</a></li>
+                      <li><a href="#!">دیجیاتو 2دیجیاتو 2</a></li>
+                      <li><a href="#!">دیجیاتو 3</a></li>
+                      <li><a href="#!">دیجیاتو 4</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- UL_ListFooter -->
+          <div class="col-12 float-start d-none d-lg-flex" style=" flex-wrap: wrap;">
+            <div class="myFooterColxl float-start ">
+              <ul class="float-start col-12 ">
+                <h5>تکنولوژی</h5>
+                <li><a href="#!">تکنولوژی 1</a></li>
+                <li><a href="#!">تکنولوژی 2</a></li>
+                <li><a href="#!">تکنولوژی 3</a></li>
+                <li><a href="#!">تکنولوژی 4</a></li>
+                <li><a href="#!">تکنولوژی 5</a></li>
+                <li><a href="#!">تکنولوژی 6</a></li>
+                <li><a href="#!">تکنولوژی 7</a></li>
+                <li><a href="#!">تکنولوژی 8</a></li>
+                <li><a href="#!">تکنولوژی 9تکنولوژی 9</a></li>
+                <li><a href="#!">تکنولوژی 10</a></li>
+                <li><a href="#!">تکنولوژی 11</a></li>
+              </ul>
+            </div>
+            <div class="myFooterColxl float-start ">
+              <ul class="float-start col-12 ">
+                <h5>خودرو</h5>
+                <li><a href="#!">خودرو 1</a></li>
+                <li><a href="#!">خودرو 2</a></li>
+                <li><a href="#!">خودرو 3خودرو 3</a></li>
+                <li><a href="#!">خودرو 4</a></li>
+                <li><a href="#!">خودرو 5</a></li>
+                <li><a href="#!">خودرو 6</a></li>
+                <li><a href="#!">خودرو 7</a></li>
+              </ul>
+            </div>
+            <div class="myFooterColxl float-start ">
+              <ul class="float-start col-12 ">
+                <h5>نقد و بررسی</h5>
+                <li><a href="#!">نقد و بررسی 1</a></li>
+                <li><a href="#!">نقد و بررسی 2</a></li>
+                <li><a href="#!">نقد و بررسی 3</a></li>
+                <li><a href="#!">نقد و بررسی 4نقد و بررسی 4</a></li>
+                <li><a href="#!">نقد و بررسی 5</a></li>
+                <li><a href="#!">نقد و بررسی 6نقد و بررسی 6</a></li>
+                <li><a href="#!">نقد و بررسی 7</a></li>
+                <li><a href="#!">نقد و بررسی 8</a></li>
+                <li><a href="#!">نقد و بررسی 9</a></li>
+              </ul>
+            </div>
+            <div class="myFooterColxl float-start ">
+              <ul class="float-start col-12 ">
+                <h5>ویدئو</h5>
+                <li><a href="#!">ویدئو 1</a></li>
+                <li><a href="#!">ویدئو 2ویدئو 2</a></li>
+                <li><a href="#!">ویدئو 3</a></li>
+                <li><a href="#!">ویدئو 4</a></li>
+                <li><a href="#!">ویدئو 5</a></li>
+              </ul>
+            </div>
+            <div class="myFooterColxl float-start ">
+              <ul class="float-start col-12 ">
+                <h5>آموزش</h5>
+                <li><a href="#!">آموزش 1</a></li>
+                <li><a href="#!">آموزش 2</a></li>
+                <li><a href="#!">آموزش 3آموزش 3</a></li>
+                <li><a href="#!">آموزش 4</a></li>
+                <li><a href="#!">آموزش 5</a></li>
+                <li><a href="#!">آموزش 6</a></li>
+                <li><a href="#!">آموزش 7</a></li>
+                <li><a href="#!">آموزش 8</a></li>
+              </ul>
+            </div>
+            <div class="myFooterColxl float-start ">
+              <ul class="float-start col-12 ">
+                <h5>علمی</h5>
+                <li><a href="#!">علمی 1</a></li>
+                <li><a href="#!">علمی 2علمی 2</a></li>
+                <li><a href="#!">علمی 3</a></li>
+                <li><a href="#!">علمی 4علمی 4علمی 4</a></li>
+                <li><a href="#!">علمی 5</a></li>
+                <li><a href="#!">علمی 6</a></li>
+              </ul>
+            </div>
+            <div class="myFooterColxl float-start ">
+              <ul class="float-start col-12 ">
+                <h5>کسب و کار</h5>
+                <li><a href="#!">کسب و کار 1</a></li>
+                <li><a href="#!">کسب و کار 2</a></li>
+                <li><a href="#!">کسب و کار 3کسب و کار 3</a></li>
+                <li><a href="#!">کسب و کار 4</a></li>
+                <li><a href="#!">کسب و کار 5</a></li>
+                <li><a href="#!">کسب و کار 6</a></li>
+                <li><a href="#!">کسب و کار 7</a></li>
+                <li><a href="#!">کسب و کار 8</a></li>
+                <li><a href="#!">کسب و کار 9</a></li>
+                <li><a href="#!">کسب و کار 10</a></li>
+              </ul>
+            </div>
+            <div class="myFooterColxl float-start ">
+              <ul class="float-start col-12 ">
+                <h5>دیجیاتو</h5>
+                <li><a href="#!">دیجیاتو 1</a></li>
+                <li><a href="#!">دیجیاتو 2دیجیاتو 2</a></li>
+                <li><a href="#!">دیجیاتو 3</a></li>
+                <li><a href="#!">دیجیاتو 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="subFooter" class="w-100 float-start p-2" style="background-color: #f0f4fc;">
+          <div class="container-fluid">
+            <div class="col float-start">
+              <p style="font-size: 12px; font-weight: bold; ">طراحی شده توسط مهدی حیدرپورقدس</p>
+            </div>
+            <div class="col float-end">
+              <a href="https://www.instagram.com/mahdi__heydarpour/"><i class="fa fa-instagram fa-2x"></i></a>
+              <a href="https://t.me/Mahdi_Hpg"><i class="fa fa-telegram fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end section sec_footer -->
+
+    <script>
+        function myBookMarkEditors_suggestion(x) {
+        var bookMark = document.getElementById("wishList");
+        x.classList.toggle("fa-check-circle");
+        }
+
+        function myBookMarkTodaysNews(x) {
+        var bookMark = document.getElementById("wishListTodaysNews");
+        x.classList.toggle("fa-check-circle");
+        }
+
+        window.onscroll = function() {
+          scrollFunction();
+        };
+
+        let navBarWithScollingSite = document.querySelectorAll('.navBarScollingSite');
+        var minWidth768 = window.matchMedia("(min-width: 768px)");
+
+        function scrollFunction() {
+          // NavBarTab_scroll
+          // for (let i = 0; i < navBarWithScollingSite.length; i++) {
+          //   if (document.body.scrollTop > 38 || document.documentElement.scrollTop > 38) {
+          //   navBarWithScollingSite[i].style.top = "55px";
+          //   } else {
+          //     navBarWithScollingSite[i].style.top = "158px";
+          //   } 
+          // }
+        
+          // NavBar Items animation
+
+          function Function768(x) {
+            if (x.matches) {
+              var prevScrollpos = window.pageYOffset;
+              window.onscroll = function() {
+              var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbarBrand").style.visibility = "visible";
+                document.getElementById("navbarSupportedContent").style.visibility = "visible";
+
+                if (document.body.scrollTop > 85 || document.documentElement.scrollTop > 85) {
+                  document.getElementById("Navbar_Tabs").style.top = "0";
+                  document.getElementById("Navbar_Tabs").style.transition = "0.5s all ease-in-out";
+
+                  // document.getElementById("ol_menus").style.top = "50px";
+
+                  document.getElementById("navbarBrand").style.width = "5%";
+                  document.getElementById("navbarBrand").classList.add("navbar_scrolling_anim_navbarBrand");
+                  document.getElementById("navbarBrand").classList.remove("navbar_scrolling_anim_return_navbarBrand");
+                  document.getElementById("navbarSupportedContent").classList.add("navbar_scrolling_anim_navbarSupportedContent");
+                  document.getElementById("navbarSupportedContent").classList.remove("navbar_scrolling_anim_return_navbarSupportedContent");
+
+                  document.getElementById("most-fans").style.visibility = "hidden";
+
+                  document.getElementById("ul_navbar_Tabs").style.margin = "0 65px 0 0";
+                  document.getElementById("ul_navbar_Tabs").style.zIndex = "1000";
+
+                  document.getElementById("brand_pic").style.width = "70px";
+                  document.getElementById("brand_pic").style.maxWidth = "none";
+
+                } 
+                else  {
+
+                  // document.getElementById("ol_menus").style.top = "158px";
+                
+                  document.getElementById("navbarBrand").classList.add("navbar_scrolling_anim_return_navbarBrand");
+                  document.getElementById("navbarBrand").classList.remove("navbar_scrolling_anim_navbarBrand");
+                  document.getElementById("navbarSupportedContent").classList.add("navbar_scrolling_anim_return_navbarSupportedContent");
+                  document.getElementById("navbarSupportedContent").classList.remove("navbar_scrolling_anim_navbarSupportedContent");
+
+                  document.getElementById("Navbar_Tabs").classList.remove("Navbar_Tabs_fix");
+
+                  document.getElementById("navbarBrand").style.width = "9.5%";
+
+                  document.getElementById("most-fans").style.visibility = "visible";
+
+                  document.getElementById("ul_navbar_Tabs").style.margin = "0 0 0 0";
+                  document.getElementById("ul_navbar_Tabs").style.zIndex = "1000";
+
+                  document.getElementById("brand_pic").style.width = "100%";
+                  document.getElementById("brand_pic").style.maxWidth = "100%";
+
+                }
+
+              } else {
+                document.getElementById("Navbar_Tabs").classList.add("Navbar_Tabs_fix");
+                document.getElementById("Navbar_Tabs").style.top = "-70px";
+                document.getElementById("Navbar_Tabs").style.transition = "0.4s all ease";
+                document.getElementById("navbarBrand").style.visibility = "hidden";
+                document.getElementById("navbarSupportedContent").style.visibility = "hidden";
+
+              }
+              prevScrollpos = currentScrollPos;
+              }
+              } 
+            
+              else {
+              var prevScrollpos = window.pageYOffset;
+              window.onscroll = function() {
+              var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+
+                if (document.body.scrollTop > 85 || document.documentElement.scrollTop > 85) {
+                  document.getElementById("navbar").classList.add("navbar_fix_767");
+                  document.getElementById("navbar").style.top = "0";
+                  document.getElementById("navbar").style.transition = "0.4s all ease";
+
+                  // document.getElementById("navbarBrand").classList.add("navbar_scrolling_anim_navbarBrand");
+                  // document.getElementById("navbarBrand").classList.remove("navbar_scrolling_anim_return_navbarBrand");
+                  // document.getElementById("navbarSupportedContent").classList.add("navbar_scrolling_anim_navbarSupportedContent");
+                  // document.getElementById("navbarSupportedContent").classList.remove("navbar_scrolling_anim_return_navbarSupportedContent");
+                } 
+                else  {
+                  document.getElementById("navbar").classList.remove("navbar_fix_767");
+                }
+
+              } else {
+                    document.getElementById("navbar").style.top = "-70px";
+                }
+                  prevScrollpos = currentScrollPos;
+                }
+              }
+            
+            }
+          Function768(minWidth768);
+          minWidth768.addListener(Function768);
+
+        }
+        
+        var between768_992 = window.matchMedia('(min-width:768px) and (max-width: 992px)');
+        let navbar_collapse = document.getElementById("navbarSupportedContent");
+        let xnavbar_collapsex = document.getElementById("xnavbarSupportedContentx");
+        function Function768_992(y) {
+          if (y.matches) {
+              navbar_collapse.classList.remove("navbar-collapse");
+              navbar_collapse.classList.add("myNavbarSupportedContent");
+
+             }
+             
+             else {
+              navbar_collapse.classList.add("navbar-collapse");
+              navbar_collapse.classList.remove("myNavbarSupportedContent");
+              
+              xnavbar_collapsex.classList.remove("navbar-collapse");
+              xnavbar_collapsex.classList.add("myNavbarSupportedContent");
+
+
+             }
+           }
+        Function768_992(between768_992);
+        between768_992.addListener(Function768_992);
+
+    </script>
+
+  </body>
+</html>
